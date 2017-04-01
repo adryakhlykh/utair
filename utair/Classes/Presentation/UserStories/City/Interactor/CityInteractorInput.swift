@@ -13,4 +13,10 @@ protocol CityInteractorInput {
 	/// Метод для загрузки городов
     
     func getCities()
+    
+    /// Метод для поиска города
+    ///
+    /// - Parameter string: поисковая строка
+    
+    func getCities(withSearchString string: String)
 }

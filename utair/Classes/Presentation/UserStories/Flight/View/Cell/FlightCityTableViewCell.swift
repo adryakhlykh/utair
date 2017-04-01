@@ -55,11 +55,13 @@ class FlightCityTableViewCell: UITableViewCell {
     }
     
     func fill(withFromCity city: City) {
-        fromTitleLabel.text = city.id.description
+        fromTitleLabel.text = city.title
+        fromSubtitleLabel.text = "FLIGHT.CITY.ALL_AIRPORTS".localized
     }
     
     func fill(withToCity city: City) {
-        toTitleLabel.text = city.id.description
+        toTitleLabel.text = city.title
+        toSubtitleLabel.text = "FLIGHT.CITY.ALL_AIRPORTS".localized
     }
     
     // MARK: Private helpers

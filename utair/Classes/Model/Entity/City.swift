@@ -9,4 +9,6 @@
 struct City: Entity {
     let id: Int
     let title: String
+    let latitude: Double
+    let longitude: Double
 }

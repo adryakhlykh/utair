@@ -19,6 +19,7 @@ class CityAdapter: NSObject {
     private var tableView: UITableView
     fileprivate var cities: [City]
     var block: CityBlock?
+    var scrollBlock: EmptyBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -49,5 +50,9 @@ extension CityAdapter: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         block?(cities[indexPath.row])
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        scrollBlock?()
     }
 }

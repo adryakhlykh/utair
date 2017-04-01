@@ -19,6 +19,7 @@ protocol Request: URLRequestConvertible {
 }
 
 // MARK: URLRequestConvertible
+
 extension Request  {
     func asURLRequest() throws -> URLRequest {
         let url = try path.asURL()

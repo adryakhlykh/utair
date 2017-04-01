@@ -10,7 +10,7 @@ import Foundation
 
 class MapperImpl {
     final func mapResponse(_ modelDictionary: ModelDictionary) throws -> Response {
-        let data = try modelDictionary.map("items") as [ModelDictionary]
+        let data = try modelDictionary.map(JSONKey.results) as [ModelDictionary]
         return Response(data: data)
     }
 }

@@ -153,7 +153,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFb-ql-LcT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AUz-px-csz" customClass="BlueNavigationBar" customModule="utair" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AUz-px-csz" customClass="BlueNavigationBar" customModule="utair" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

@@ -9,5 +9,5 @@
 import Foundation
 
 struct Response {
-    let data: ModelDictionary
+    let data: [ModelDictionary]
 }

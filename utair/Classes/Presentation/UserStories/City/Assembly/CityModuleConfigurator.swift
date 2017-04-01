@@ -32,6 +32,7 @@ class CityModuleConfigurator {
         presenter.interactor = interactor
 
         interactor.output = presenter
+        interactor.cityService = CityServiceAssemblyImpl.service()
 
         viewController.output = presenter
         viewController.moduleInput = presenter

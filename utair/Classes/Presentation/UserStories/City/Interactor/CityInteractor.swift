@@ -11,25 +11,37 @@ class CityInteractor: CityInteractorInput {
     // MARK: Properties
 
     weak var output: CityInteractorOutput!
+    var cityService: CityService?
+    private var cities: [City] = []
 
     // MARK: CityInteractorInput
     
     func getCities() {
-        let city0 = City(id: 0, title: "Киров")
-        let city1 = City(id: 1, title: "Киров")
-        let city2 = City(id: 2, title: "Киров")
-        let city3 = City(id: 3, title: "Киров")
-        let city4 = City(id: 4, title: "Киров")
-        let city5 = City(id: 5, title: "Киров")
-        let city6 = City(id: 6, title: "Киров")
-        let city7 = City(id: 7, title: "Киров")
-        let city8 = City(id: 8, title: "Киров")
-        let city9 = City(id: 9, title: "Киров")
-        let city10 = City(id: 10, title: "Киров")
-        let city11 = City(id: 11, title: "Киров")
-        output.didGetCities(withCities: [city0, city1, city2, city3, city4, city5, city6, city7, city8, city9, city10, city11])
+        cityService?.getAll { [weak self] result in self?.didGetAllCitiesResult(result) }
     }
-
-    // MARK: Private Helpers
     
+    func getCities(withSearchString string: String) {
+        if !cities.isEmpty {
+            let filteredCities = cities.filter { $0.title.lowercased().contains(string.lowercased()) }
+            output.didGetCities(withCities: filteredCities)
+        }
+    }
+    
+    // MARK: Private helpers
+    
+    private func didGetAllCitiesResult(_ result: Result<[City]>) {
+        switch result {
+            case .value(let cities): didGetAllCities(withCities: cities)
+            case .error(let error): didGetAllCitiesError(error)
+        }
+    }
+    
+    private func didGetAllCities(withCities cities: [City]) {
+        self.cities = cities
+        output.didGetCities(withCities: cities)
+    }
+    
+    private func didGetAllCitiesError(_ error: Error) {
+        print(error)
+    }
 }

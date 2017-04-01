@@ -30,17 +30,35 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
         }
         router.closeModule()
     }
+    
+    func didTextFieldTextChange(withSearchString string: String) {
+        interactor.getCities(withSearchString: string)
+        switch direction {
+            case .from:
+                view.setupView(withPlaceholder: "FLIGHT.CITY.FROM".localized, text: string, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig1")
+            case .to:
+                view.setupView(withPlaceholder: "FLIGHT.CITY.TO".localized, text: string, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig2")
+        }
+    }
 
     // MARK: CityModuleInput
     
     func configureModule(withFromTitle title: String) {
         direction = .from
-        view.setupView(withPlaceholder: "FLIGHT.CITY.FROM".localized, text: title, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig1")
+        if title == "FLIGHT.CITY.FROM".localized || title == "FLIGHT.CITY.TO".localized {
+            view.setupView(withPlaceholder: "FLIGHT.CITY.FROM".localized, text: nil, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig1")
+        } else {
+            view.setupView(withPlaceholder: "FLIGHT.CITY.FROM".localized, text: title, subtitle: "FLIGHT.CITY.ALL_AIRPORTS".localized, imageName: "icnGlobalDotBig1")
+        }
     }
 
     func configureModule(withToTitle title: String) {
         direction = .to
-        view.setupView(withPlaceholder: "FLIGHT.CITY.TO".localized, text: title, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig2")
+        if title == "FLIGHT.CITY.TO".localized || title == "FLIGHT.CITY.FROM".localized {
+            view.setupView(withPlaceholder: "FLIGHT.CITY.TO".localized, text: nil, subtitle: "FLIGHT.CITY.DIRECTION".localized, imageName: "icnGlobalDotBig2")
+        } else {
+            view.setupView(withPlaceholder: "FLIGHT.CITY.TO".localized, text: title, subtitle: "FLIGHT.CITY.ALL_AIRPORTS".localized, imageName: "icnGlobalDotBig2")
+        }
     }
     
     func setModuleOutput(moduleOutput: ModuleOutput) {

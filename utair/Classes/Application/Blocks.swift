@@ -22,3 +22,6 @@ typealias StringBlock = (String) -> ()
 
 /// Item clicked block with City parameter.
 typealias CityBlock = (City) -> ()
+
+/// Operation result block with array of City parameter
+typealias CityResultBlock = (Result<[City]>) -> ()

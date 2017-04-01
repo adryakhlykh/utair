@@ -22,5 +22,5 @@ protocol CityViewInput: class {
     ///   - imageName: название картинки
     ///   - text: текст текстфилда
 
-    func setupView(withPlaceholder placeholder: String, text: String, subtitle: String, imageName: String)
+    func setupView(withPlaceholder placeholder: String, text: String?, subtitle: String, imageName: String)
 }

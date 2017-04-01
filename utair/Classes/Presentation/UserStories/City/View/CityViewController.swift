@@ -27,11 +27,21 @@ class CityViewController: RouterViewController, CityViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.setupView()
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextFieldTextDidChange, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         view.endEditing(true)
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    // MARK: Internal helpers
+    
+    func textDidChange() {
+        if let text = cityTextField.text {
+            output.didTextFieldTextChange(withSearchString: text)
+        }
     }
 
     // MARK: CityViewInput
@@ -41,16 +51,16 @@ class CityViewController: RouterViewController, CityViewInput {
         tableView.dataSource = adapter
         tableView.delegate = adapter
         adapter.block = { [weak self] city in self?.output.didTapOnCity(withCity: city) }
+        adapter.scrollBlock = { [weak self] in self?.view.endEditing(true) }
         self.adapter = adapter
+        tableView.reloadData()
         cityTextField.becomeFirstResponder()
     }
     
-    func setupView(withPlaceholder placeholder: String, text: String, subtitle: String, imageName: String) {
+    func setupView(withPlaceholder placeholder: String, text: String?, subtitle: String, imageName: String) {
         circleImageView.tintColor = .white
         circleImageView.image = UIImage(named: imageName)
-        if text != placeholder {
-            cityTextField.text = text
-        }
+        cityTextField.text = text
         cityTextField.placeholder = placeholder
         descriptionLabel.text = subtitle
     }

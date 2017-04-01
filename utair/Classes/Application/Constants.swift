@@ -14,6 +14,20 @@ struct SegueID {
     static let unwindToFlight = "unwindToFlight"
 }
 
+struct RequestURL {
+    static let cities = "http://api.meetup.com/2/cities"
+}
+
+struct JSONKey {
+    static let results = "results"
+    struct City {
+        static let id = "id"
+        static let title = "city"
+        static let latitude = "lat"
+        static let longitude = "lon"
+    }
+}
+
 enum Direction {
     case to
     case from
