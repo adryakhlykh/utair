@@ -17,8 +17,6 @@
 		4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300181E8FF09E001B2014 /* PlusButton.swift */; };
 		4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001A1E8FFB39001B2014 /* MinusButton.swift */; };
 		4A0300211E9009D3001B2014 /* FindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300201E9009D3001B2014 /* FindButton.swift */; };
-		4A0300241E902295001B2014 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300231E902295001B2014 /* Entity.swift */; };
-		4A0300261E9022AB001B2014 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300251E9022AB001B2014 /* City.swift */; };
 		4A0300281E9027C9001B2014 /* CityModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300271E9027C9001B2014 /* CityModuleOutput.swift */; };
 		4A03002A1E902BDB001B2014 /* WhiteNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300291E902BDB001B2014 /* WhiteNavigationBar.swift */; };
 		4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03002B1E9030E7001B2014 /* CityTextField.swift */; };
@@ -26,6 +24,20 @@
 		4A0300321E903532001B2014 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300301E903532001B2014 /* CityTableViewCell.swift */; };
 		4A0300331E903532001B2014 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0300311E903532001B2014 /* CityTableViewCell.xib */; };
 		4A0300351E90357E001B2014 /* BoldWhiteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300341E90357E001B2014 /* BoldWhiteLabel.swift */; };
+		4A03003E1E90523A001B2014 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03003D1E90523A001B2014 /* DataProvider.swift */; };
+		4A0300401E90524D001B2014 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03003F1E90524D001B2014 /* Deserializer.swift */; };
+		4A0300421E905258001B2014 /* JSONDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300411E905258001B2014 /* JSONDeserializer.swift */; };
+		4A0300441E905271001B2014 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300431E905271001B2014 /* Mapper.swift */; };
+		4A0300461E9052A9001B2014 /* MapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300451E9052A9001B2014 /* MapperImpl.swift */; };
+		4A0300481E9052C4001B2014 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300471E9052C4001B2014 /* Request.swift */; };
+		4A03004A1E9052DB001B2014 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300491E9052DB001B2014 /* Transport.swift */; };
+		4A03004C1E9052E5001B2014 /* TransportImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03004B1E9052E5001B2014 /* TransportImpl.swift */; };
+		4A03004E1E90533D001B2014 /* Dictionary+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03004D1E90533D001B2014 /* Dictionary+Parsing.swift */; };
+		4A0300531E905360001B2014 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300501E905360001B2014 /* City.swift */; };
+		4A0300541E905360001B2014 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300511E905360001B2014 /* Entity.swift */; };
+		4A0300561E90538B001B2014 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300551E90538B001B2014 /* Errors.swift */; };
+		4A0300581E90539A001B2014 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300571E90539A001B2014 /* Response.swift */; };
+		4A03005A1E9053A8001B2014 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300591E9053A8001B2014 /* Result.swift */; };
 		4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */; };
 		4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */; };
 		4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE915FA1E8E8CBF0094D9C5 /* AppDelegate.swift */; };
@@ -91,8 +103,6 @@
 		4A0300181E8FF09E001B2014 /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		4A03001A1E8FFB39001B2014 /* MinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
 		4A0300201E9009D3001B2014 /* FindButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindButton.swift; sourceTree = "<group>"; };
-		4A0300231E902295001B2014 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
-		4A0300251E9022AB001B2014 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		4A0300271E9027C9001B2014 /* CityModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModuleOutput.swift; sourceTree = "<group>"; };
 		4A0300291E902BDB001B2014 /* WhiteNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteNavigationBar.swift; sourceTree = "<group>"; };
 		4A03002B1E9030E7001B2014 /* CityTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTextField.swift; sourceTree = "<group>"; };
@@ -100,6 +110,20 @@
 		4A0300301E903532001B2014 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
 		4A0300311E903532001B2014 /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
 		4A0300341E90357E001B2014 /* BoldWhiteLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoldWhiteLabel.swift; sourceTree = "<group>"; };
+		4A03003D1E90523A001B2014 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		4A03003F1E90524D001B2014 /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		4A0300411E905258001B2014 /* JSONDeserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONDeserializer.swift; sourceTree = "<group>"; };
+		4A0300431E905271001B2014 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		4A0300451E9052A9001B2014 /* MapperImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapperImpl.swift; sourceTree = "<group>"; };
+		4A0300471E9052C4001B2014 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		4A0300491E9052DB001B2014 /* Transport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transport.swift; sourceTree = "<group>"; };
+		4A03004B1E9052E5001B2014 /* TransportImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransportImpl.swift; sourceTree = "<group>"; };
+		4A03004D1E90533D001B2014 /* Dictionary+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Parsing.swift"; sourceTree = "<group>"; };
+		4A0300501E905360001B2014 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4A0300511E905360001B2014 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		4A0300551E90538B001B2014 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		4A0300571E90539A001B2014 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		4A0300591E9053A8001B2014 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPeopleTableViewCell.xib; sourceTree = "<group>"; };
 		4A47080E9752968B7DB03789 /* CityInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorOutput.swift; sourceTree = "<group>"; };
@@ -217,8 +241,8 @@
 		4A0300221E902284001B2014 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				4A0300231E902295001B2014 /* Entity.swift */,
-				4A0300251E9022AB001B2014 /* City.swift */,
+				4A0300521E905360001B2014 /* Common */,
+				4A03004F1E905360001B2014 /* Entity */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -230,6 +254,88 @@
 				4A0300311E903532001B2014 /* CityTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		4A0300361E905227001B2014 /* Business Logic */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300371E905227001B2014 /* Common */,
+			);
+			path = "Business Logic";
+			sourceTree = "<group>";
+		};
+		4A0300371E905227001B2014 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300381E905227001B2014 /* DataProvider */,
+				4A0300391E905227001B2014 /* Deserializer */,
+				4A03003A1E905227001B2014 /* Mapper */,
+				4A03003B1E905227001B2014 /* Request */,
+				4A03003C1E905227001B2014 /* Transport */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4A0300381E905227001B2014 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				4A03003D1E90523A001B2014 /* DataProvider.swift */,
+			);
+			path = DataProvider;
+			sourceTree = "<group>";
+		};
+		4A0300391E905227001B2014 /* Deserializer */ = {
+			isa = PBXGroup;
+			children = (
+				4A03003F1E90524D001B2014 /* Deserializer.swift */,
+				4A0300411E905258001B2014 /* JSONDeserializer.swift */,
+			);
+			path = Deserializer;
+			sourceTree = "<group>";
+		};
+		4A03003A1E905227001B2014 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300431E905271001B2014 /* Mapper.swift */,
+				4A0300451E9052A9001B2014 /* MapperImpl.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		4A03003B1E905227001B2014 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300471E9052C4001B2014 /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		4A03003C1E905227001B2014 /* Transport */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300491E9052DB001B2014 /* Transport.swift */,
+				4A03004B1E9052E5001B2014 /* TransportImpl.swift */,
+			);
+			path = Transport;
+			sourceTree = "<group>";
+		};
+		4A03004F1E905360001B2014 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300511E905360001B2014 /* Entity.swift */,
+				4A0300501E905360001B2014 /* City.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		4A0300521E905360001B2014 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300551E90538B001B2014 /* Errors.swift */,
+				4A0300571E90539A001B2014 /* Response.swift */,
+				4A0300591E9053A8001B2014 /* Result.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		4AE915DA1E8E8C2E0094D9C5 = {
@@ -263,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE915F91E8E8CBF0094D9C5 /* Application */,
+				4A0300361E905227001B2014 /* Business Logic */,
 				4A0300221E902284001B2014 /* Model */,
 				4AE915FB1E8E8CBF0094D9C5 /* Presentation */,
 				4AE916261E8E97AD0094D9C5 /* Utils */,
@@ -370,6 +477,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE916281E8E97CE0094D9C5 /* String+localization.swift */,
+				4A03004D1E90533D001B2014 /* Dictionary+Parsing.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -703,36 +811,45 @@
 			files = (
 				4AE916511E8EF1750094D9C5 /* Button.swift in Sources */,
 				4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */,
-				4A0300261E9022AB001B2014 /* City.swift in Sources */,
+				4A03003E1E90523A001B2014 /* DataProvider.swift in Sources */,
+				4A0300421E905258001B2014 /* JSONDeserializer.swift in Sources */,
+				4A03004E1E90533D001B2014 /* Dictionary+Parsing.swift in Sources */,
 				4AE9160A1E8E8CFB0094D9C5 /* Blocks.swift in Sources */,
+				4A0300561E90538B001B2014 /* Errors.swift in Sources */,
 				4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */,
 				4AE916441E8EE38F0094D9C5 /* Font.swift in Sources */,
 				4A03002E1E90350E001B2014 /* CityAdapter.swift in Sources */,
 				4AE9160F1E8E93220094D9C5 /* ConfigurationHolder.swift in Sources */,
 				4AE916081E8E8CDD0094D9C5 /* Constants.swift in Sources */,
 				4AE9163A1E8E9C230094D9C5 /* TableView.swift in Sources */,
+				4A0300441E905271001B2014 /* Mapper.swift in Sources */,
 				4AE916131E8E93650094D9C5 /* ModuleOutput.swift in Sources */,
 				4A0300321E903532001B2014 /* CityTableViewCell.swift in Sources */,
+				4A03004A1E9052DB001B2014 /* Transport.swift in Sources */,
+				4A0300461E9052A9001B2014 /* MapperImpl.swift in Sources */,
 				4AE9164E1E8EE5DD0094D9C5 /* DateTextField.swift in Sources */,
 				4AE916151E8E93810094D9C5 /* RouterTransitionHandler.swift in Sources */,
 				4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */,
 				4A0300211E9009D3001B2014 /* FindButton.swift in Sources */,
 				4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */,
+				4A0300401E90524D001B2014 /* Deserializer.swift in Sources */,
 				4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */,
 				4AE9162E1E8E98840094D9C5 /* BlueNavigationBar.swift in Sources */,
 				4A03002A1E902BDB001B2014 /* WhiteNavigationBar.swift in Sources */,
+				4A0300531E905360001B2014 /* City.swift in Sources */,
 				4AE9163D1E8E9DF00094D9C5 /* Color.swift in Sources */,
 				4AE9161A1E8E93D80094D9C5 /* ViewController.swift in Sources */,
 				4AE9164C1E8EE5A80094D9C5 /* TextField.swift in Sources */,
 				4AE916371E8E9B130094D9C5 /* FlightAdapter.swift in Sources */,
 				4AE916111E8E93560094D9C5 /* ModuleInput.swift in Sources */,
+				4A0300581E90539A001B2014 /* Response.swift in Sources */,
 				4AE916171E8E93A00094D9C5 /* RouterViewController.swift in Sources */,
 				4AE916491E8EE41A0094D9C5 /* TransparentBlueLabel.swift in Sources */,
 				4AE916531E8EF1A10094D9C5 /* TransparentBorderedButton.swift in Sources */,
 				982AD5F0C92D3C6EFBBAC115 /* FlightModuleInitializer.swift in Sources */,
 				4A0300351E90357E001B2014 /* BoldWhiteLabel.swift in Sources */,
 				D32EC2AEE8D1706AB1B43616 /* FlightModuleConfigurator.swift in Sources */,
-				4A0300241E902295001B2014 /* Entity.swift in Sources */,
+				4A0300481E9052C4001B2014 /* Request.swift in Sources */,
 				4AE916471E8EE3F50094D9C5 /* Label.swift in Sources */,
 				FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */,
 				422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */,
@@ -746,11 +863,14 @@
 				1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */,
 				B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */,
 				E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */,
+				4A03005A1E9053A8001B2014 /* Result.swift in Sources */,
 				70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */,
 				4A0300281E9027C9001B2014 /* CityModuleOutput.swift in Sources */,
 				17B119023DFD34E8978C2EB4 /* CityModuleInitializer.swift in Sources */,
 				02C075BAD34A5B8556FE827E /* CityModuleConfigurator.swift in Sources */,
+				4A0300541E905360001B2014 /* Entity.swift in Sources */,
 				9E0A3062858EABEEADAC73E0 /* CityInteractor.swift in Sources */,
+				4A03004C1E9052E5001B2014 /* TransportImpl.swift in Sources */,
 				4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */,
 				7F280FA98B52E4F371CBB42B /* CityInteractorInput.swift in Sources */,
 				288F50E7243D1BCA5EF640D2 /* CityInteractorOutput.swift in Sources */,
