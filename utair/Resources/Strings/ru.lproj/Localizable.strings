@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  utair
+
+  Created by Anton Dryakhlykh on 31.03.17.
+  Copyright © 2017 teedee. All rights reserved.
+*/
+
+//TITLE
+"TITLE.FLIGHT" = "UTair";
+
+//FLIGHT
+"FLIGHT.CITY.FROM" = "Откуда";
+"FLIGHT.CITY.TO" = "Куда";
+"FLIGHT.CITY.DIRECTION" = "Выберите направление";
+"FLIGHT.CITY.ALL_AIRPORTS" = "Все аэропорты";
+"FLIGHT.DATE.THERE" = "Туда";
+"FLIGHT.DATE.BACK" = "Обратно";
+"FLIGHT.AGE.ADULT" = "Взрослый";
+"FLIGHT.AGE.CHILD" = "2-12 лет";
+"FLIGHT.AGE.BABY" = "до 2-х лет";
+"FLIGT.BUTTON.FIND" = "Найти рейсы";
+"FLIGT.TOOLBAR.BUTTON.DONE" = "Готово";
+"FLIGT.TOOLBAR.BUTTON.CANCEL" = "Отмена";

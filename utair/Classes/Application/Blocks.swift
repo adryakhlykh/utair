@@ -6,4 +6,10 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+/// Segue configuration block with Module Input parameter.
+typealias ConfigurationBlock = (ModuleInput) -> (ModuleOutput?)
+
+/// Keyboard showed/hidden block with Int parameter.
+typealias KeyboardHeightBlock = (CGFloat) -> ()

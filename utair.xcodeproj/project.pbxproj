@@ -7,16 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */; };
+		2C1703E9C4C58C60D8C56312 /* FlightRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */; };
+		422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */; };
+		4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300181E8FF09E001B2014 /* PlusButton.swift */; };
+		4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001A1E8FFB39001B2014 /* MinusButton.swift */; };
+		4A03001E1E900891001B2014 /* FlightFindButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */; };
+		4A03001F1E900891001B2014 /* FlightFindButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */; };
+		4A0300211E9009D3001B2014 /* FindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300201E9009D3001B2014 /* FindButton.swift */; };
+		4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */; };
+		4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */; };
 		4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE915FA1E8E8CBF0094D9C5 /* AppDelegate.swift */; };
 		4AE916031E8E8CBF0094D9C5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE915FC1E8E8CBF0094D9C5 /* LaunchScreen.storyboard */; };
 		4AE916041E8E8CBF0094D9C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AE915FD1E8E8CBF0094D9C5 /* Main.storyboard */; };
 		4AE916051E8E8CBF0094D9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AE915FF1E8E8CBF0094D9C5 /* Assets.xcassets */; };
-		4AE916061E8E8CBF0094D9C5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AE916011E8E8CBF0094D9C5 /* Info.plist */; };
 		4AE916081E8E8CDD0094D9C5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916071E8E8CDD0094D9C5 /* Constants.swift */; };
 		4AE9160A1E8E8CFB0094D9C5 /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916091E8E8CFB0094D9C5 /* Blocks.swift */; };
+		4AE9160F1E8E93220094D9C5 /* ConfigurationHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9160E1E8E93220094D9C5 /* ConfigurationHolder.swift */; };
+		4AE916111E8E93560094D9C5 /* ModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916101E8E93560094D9C5 /* ModuleInput.swift */; };
+		4AE916131E8E93650094D9C5 /* ModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916121E8E93650094D9C5 /* ModuleOutput.swift */; };
+		4AE916151E8E93810094D9C5 /* RouterTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916141E8E93810094D9C5 /* RouterTransitionHandler.swift */; };
+		4AE916171E8E93A00094D9C5 /* RouterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916161E8E93A00094D9C5 /* RouterViewController.swift */; };
+		4AE9161A1E8E93D80094D9C5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916191E8E93D80094D9C5 /* ViewController.swift */; };
+		4AE916221E8E97100094D9C5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4AE916241E8E97100094D9C5 /* Localizable.strings */; };
+		4AE916291E8E97CE0094D9C5 /* String+localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916281E8E97CE0094D9C5 /* String+localization.swift */; };
+		4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9162B1E8E986C0094D9C5 /* NavigationBar.swift */; };
+		4AE9162E1E8E98840094D9C5 /* BlueNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9162D1E8E98840094D9C5 /* BlueNavigationBar.swift */; };
+		4AE916321E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916301E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift */; };
+		4AE916331E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE916311E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib */; };
+		4AE916371E8E9B130094D9C5 /* FlightAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916361E8E9B130094D9C5 /* FlightAdapter.swift */; };
+		4AE9163A1E8E9C230094D9C5 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916391E8E9C230094D9C5 /* TableView.swift */; };
+		4AE9163D1E8E9DF00094D9C5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9163C1E8E9DF00094D9C5 /* Color.swift */; };
+		4AE916401E8EE3030094D9C5 /* FlightDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9163E1E8EE3030094D9C5 /* FlightDateTableViewCell.swift */; };
+		4AE916411E8EE3030094D9C5 /* FlightDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE9163F1E8EE3030094D9C5 /* FlightDateTableViewCell.xib */; };
+		4AE916441E8EE38F0094D9C5 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916431E8EE38E0094D9C5 /* Font.swift */; };
+		4AE916471E8EE3F50094D9C5 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916461E8EE3F50094D9C5 /* Label.swift */; };
+		4AE916491E8EE41A0094D9C5 /* TransparentBlueLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916481E8EE41A0094D9C5 /* TransparentBlueLabel.swift */; };
+		4AE9164C1E8EE5A80094D9C5 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9164B1E8EE5A80094D9C5 /* TextField.swift */; };
+		4AE9164E1E8EE5DD0094D9C5 /* DateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE9164D1E8EE5DD0094D9C5 /* DateTextField.swift */; };
+		4AE916511E8EF1750094D9C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916501E8EF1750094D9C5 /* Button.swift */; };
+		4AE916531E8EF1A10094D9C5 /* TransparentBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */; };
+		70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */; };
+		7B0A6D8955EA68719344E6A0 /* FlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20DBC390BF58807E6C7DA /* FlightRouter.swift */; };
+		982AD5F0C92D3C6EFBBAC115 /* FlightModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */; };
+		B4141DCE9470B251451B388B /* FlightInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */; };
+		B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB03E00455C84E8C92388A1 /* FlightViewController.swift */; };
+		D32EC2AEE8D1706AB1B43616 /* FlightModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */; };
+		E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */; };
+		EF52E6B1AB0E692FB7752218 /* FlightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */; };
+		FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
+		08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
+		0CB03E00455C84E8C92388A1 /* FlightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		1B820D6D73A53B60CCC990A7 /* FlightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
+		287A26DE2ACB2A68A0E2ABA5 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
+		2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInput.swift; sourceTree = "<group>"; };
+		30E20DBC390BF58807E6C7DA /* FlightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
+		427DA3BDFF9236196B8DCDC9 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
+		4A0300181E8FF09E001B2014 /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
+		4A03001A1E8FFB39001B2014 /* MinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
+		4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightFindButtonTableViewCell.swift; sourceTree = "<group>"; };
+		4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightFindButtonTableViewCell.xib; sourceTree = "<group>"; };
+		4A0300201E9009D3001B2014 /* FindButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindButton.swift; sourceTree = "<group>"; };
+		4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPeopleTableViewCell.swift; sourceTree = "<group>"; };
+		4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPeopleTableViewCell.xib; sourceTree = "<group>"; };
 		4AE915E31E8E8C2E0094D9C5 /* utair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = utair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE915FA1E8E8CBF0094D9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE915FC1E8E8CBF0094D9C5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -25,6 +82,47 @@
 		4AE916011E8E8CBF0094D9C5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AE916071E8E8CDD0094D9C5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4AE916091E8E8CFB0094D9C5 /* Blocks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		4AE9160E1E8E93220094D9C5 /* ConfigurationHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationHolder.swift; sourceTree = "<group>"; };
+		4AE916101E8E93560094D9C5 /* ModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleInput.swift; sourceTree = "<group>"; };
+		4AE916121E8E93650094D9C5 /* ModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleOutput.swift; sourceTree = "<group>"; };
+		4AE916141E8E93810094D9C5 /* RouterTransitionHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterTransitionHandler.swift; sourceTree = "<group>"; };
+		4AE916161E8E93A00094D9C5 /* RouterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterViewController.swift; sourceTree = "<group>"; };
+		4AE916191E8E93D80094D9C5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4AE916231E8E97100094D9C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AE916251E8E971F0094D9C5 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		4AE916281E8E97CE0094D9C5 /* String+localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+localization.swift"; sourceTree = "<group>"; };
+		4AE9162B1E8E986C0094D9C5 /* NavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		4AE9162D1E8E98840094D9C5 /* BlueNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlueNavigationBar.swift; sourceTree = "<group>"; };
+		4AE916301E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightCityTableViewCell.swift; sourceTree = "<group>"; };
+		4AE916311E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightCityTableViewCell.xib; sourceTree = "<group>"; };
+		4AE916361E8E9B130094D9C5 /* FlightAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightAdapter.swift; sourceTree = "<group>"; };
+		4AE916391E8E9C230094D9C5 /* TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		4AE9163C1E8E9DF00094D9C5 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4AE9163E1E8EE3030094D9C5 /* FlightDateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightDateTableViewCell.swift; sourceTree = "<group>"; };
+		4AE9163F1E8EE3030094D9C5 /* FlightDateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightDateTableViewCell.xib; sourceTree = "<group>"; };
+		4AE916431E8EE38E0094D9C5 /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		4AE916461E8EE3F50094D9C5 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		4AE916481E8EE41A0094D9C5 /* TransparentBlueLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBlueLabel.swift; sourceTree = "<group>"; };
+		4AE9164B1E8EE5A80094D9C5 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		4AE9164D1E8EE5DD0094D9C5 /* DateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
+		4AE916501E8EF1750094D9C5 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBorderedButton.swift; sourceTree = "<group>"; };
+		5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
+		631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
+		63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
+		6B5C53078852388D0DD82FA2 /* FlightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewOutput.swift; sourceTree = "<group>"; };
+		6C85DDCA82F26F17BFC878BF /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
+		967098DD9DABF7648FABCF8E /* FlightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
+		A001834A2C002054B85437BC /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
+		C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
+		C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewOutput.swift; sourceTree = "<group>"; };
+		CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
+		D095647239DC3A07020E156E /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
+		DB6F62D8F4D671B8295363D0 /* FlightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInput.swift; sourceTree = "<group>"; };
+		EA4F6FB268A0F67DE467361E /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
+		F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
+		F24004C484D9EBA3603DD323 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
+		FD4DE5B53E86C0F6397046EA /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,11 +136,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0098F81E3C48F686A667754A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				30E20DBC390BF58807E6C7DA /* FlightRouter.swift */,
+				631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		17FACB5FFAC9F8F220734EFC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				967098DD9DABF7648FABCF8E /* FlightViewController.swift */,
+				F24004C484D9EBA3603DD323 /* FlightViewInput.swift */,
+				6B5C53078852388D0DD82FA2 /* FlightViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4AE915DA1E8E8C2E0094D9C5 = {
 			isa = PBXGroup;
 			children = (
 				4AE915E51E8E8C2E0094D9C5 /* utair */,
 				4AE915E41E8E8C2E0094D9C5 /* Products */,
+				617B01A46119ECEDAA19EB03 /* Classes */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +187,7 @@
 			children = (
 				4AE915F91E8E8CBF0094D9C5 /* Application */,
 				4AE915FB1E8E8CBF0094D9C5 /* Presentation */,
+				4AE916261E8E97AD0094D9C5 /* Utils */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -86,6 +205,7 @@
 		4AE915FB1E8E8CBF0094D9C5 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				4AE9160B1E8E91CA0094D9C5 /* UserStories */,
 				4AE915FD1E8E8CBF0094D9C5 /* Main.storyboard */,
 				4AE915FC1E8E8CBF0094D9C5 /* LaunchScreen.storyboard */,
 			);
@@ -96,6 +216,9 @@
 			isa = PBXGroup;
 			children = (
 				4AE915FF1E8E8CBF0094D9C5 /* Assets.xcassets */,
+				4AE916421E8EE3880094D9C5 /* Font */,
+				4AE9163B1E8E9DEA0094D9C5 /* Color */,
+				4AE9161F1E8E96F10094D9C5 /* Strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -106,6 +229,276 @@
 				4AE916011E8E8CBF0094D9C5 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		4AE9160B1E8E91CA0094D9C5 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9160C1E8E92F30094D9C5 /* Common */,
+				DD3FB3359B6AB7BC6DF76EB0 /* Flight */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		4AE9160C1E8E92F30094D9C5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916381E8E9C1B0094D9C5 /* View */,
+				4AE916181E8E93CA0094D9C5 /* ViewController */,
+				4AE9162A1E8E985F0094D9C5 /* NavigationBar */,
+				4AE9160D1E8E93190094D9C5 /* Helper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4AE9160D1E8E93190094D9C5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916101E8E93560094D9C5 /* ModuleInput.swift */,
+				4AE916121E8E93650094D9C5 /* ModuleOutput.swift */,
+				4AE9160E1E8E93220094D9C5 /* ConfigurationHolder.swift */,
+				4AE916141E8E93810094D9C5 /* RouterTransitionHandler.swift */,
+				4AE916161E8E93A00094D9C5 /* RouterViewController.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		4AE916181E8E93CA0094D9C5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916191E8E93D80094D9C5 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		4AE9161F1E8E96F10094D9C5 /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916241E8E97100094D9C5 /* Localizable.strings */,
+			);
+			path = Strings;
+			sourceTree = "<group>";
+		};
+		4AE916261E8E97AD0094D9C5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916271E8E97AD0094D9C5 /* Extensions */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4AE916271E8E97AD0094D9C5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916281E8E97CE0094D9C5 /* String+localization.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4AE9162A1E8E985F0094D9C5 /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9162B1E8E986C0094D9C5 /* NavigationBar.swift */,
+				4AE9162D1E8E98840094D9C5 /* BlueNavigationBar.swift */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		4AE9162F1E8E9AC30094D9C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916301E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift */,
+				4AE916311E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib */,
+				4AE9163E1E8EE3030094D9C5 /* FlightDateTableViewCell.swift */,
+				4AE9163F1E8EE3030094D9C5 /* FlightDateTableViewCell.xib */,
+				4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */,
+				4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */,
+				4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */,
+				4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4AE916381E8E9C1B0094D9C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9164F1E8EF1710094D9C5 /* Button */,
+				4AE916451E8EE3F00094D9C5 /* Label */,
+				4AE9164A1E8EE58F0094D9C5 /* TextField */,
+				4AE916391E8E9C230094D9C5 /* TableView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4AE9163B1E8E9DEA0094D9C5 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9163C1E8E9DF00094D9C5 /* Color.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
+		4AE916421E8EE3880094D9C5 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916431E8EE38E0094D9C5 /* Font.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		4AE916451E8EE3F00094D9C5 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916461E8EE3F50094D9C5 /* Label.swift */,
+				4AE916481E8EE41A0094D9C5 /* TransparentBlueLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		4AE9164A1E8EE58F0094D9C5 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9164B1E8EE5A80094D9C5 /* TextField.swift */,
+				4AE9164D1E8EE5DD0094D9C5 /* DateTextField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		4AE9164F1E8EF1710094D9C5 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				4AE916501E8EF1750094D9C5 /* Button.swift */,
+				4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */,
+				4A0300181E8FF09E001B2014 /* PlusButton.swift */,
+				4A03001A1E8FFB39001B2014 /* MinusButton.swift */,
+				4A0300201E9009D3001B2014 /* FindButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		617B01A46119ECEDAA19EB03 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				719879577ECD6E9645F2D95C /* Presentation */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6ABBB231DF25700D692DEB44 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				A001834A2C002054B85437BC /* FlightModuleInitializer.swift */,
+				FD4DE5B53E86C0F6397046EA /* FlightModuleConfigurator.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		719879577ECD6E9645F2D95C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B8196BF649AE9C2CB17822C3 /* UserStories */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		7C84B74052B97D0C820E20EC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */,
+				2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8D2122652CD2B04B5C2AA08A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EA4F6FB268A0F67DE467361E /* FlightPresenter.swift */,
+				DB6F62D8F4D671B8295363D0 /* FlightModuleInput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A0C9660D8E802728FFDBD756 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */,
+				63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */,
+				08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A9299F1F3427D6F0657A2D6D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				D095647239DC3A07020E156E /* FlightInteractor.swift */,
+				287A26DE2ACB2A68A0E2ABA5 /* FlightInteractorInput.swift */,
+				6C85DDCA82F26F17BFC878BF /* FlightInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B8196BF649AE9C2CB17822C3 /* UserStories */ = {
+			isa = PBXGroup;
+			children = (
+				EBF3AC54FD16649339011073 /* Flight */,
+			);
+			path = UserStories;
+			sourceTree = "<group>";
+		};
+		BD6E4604D622EFB4C445F0AC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1B820D6D73A53B60CCC990A7 /* FlightRouter.swift */,
+				427DA3BDFF9236196B8DCDC9 /* FlightRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		CB0DE011ED4C9FACEFE70319 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */,
+				08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		DD3FB3359B6AB7BC6DF76EB0 /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				CB0DE011ED4C9FACEFE70319 /* Assembly */,
+				A0C9660D8E802728FFDBD756 /* Interactor */,
+				0098F81E3C48F686A667754A /* Router */,
+				7C84B74052B97D0C820E20EC /* Presenter */,
+				FF533BCD03AF2DFDD3FB9410 /* View */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		EBF3AC54FD16649339011073 /* Flight */ = {
+			isa = PBXGroup;
+			children = (
+				6ABBB231DF25700D692DEB44 /* Assembly */,
+				A9299F1F3427D6F0657A2D6D /* Interactor */,
+				BD6E4604D622EFB4C445F0AC /* Router */,
+				8D2122652CD2B04B5C2AA08A /* Presenter */,
+				17FACB5FFAC9F8F220734EFC /* View */,
+			);
+			path = Flight;
+			sourceTree = "<group>";
+		};
+		FF533BCD03AF2DFDD3FB9410 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4AE9162F1E8E9AC30094D9C5 /* Cell */,
+				4AE916361E8E9B130094D9C5 /* FlightAdapter.swift */,
+				0CB03E00455C84E8C92388A1 /* FlightViewController.swift */,
+				C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */,
+				C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +545,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 4AE915DA1E8E8C2E0094D9C5;
 			productRefGroup = 4AE915E41E8E8C2E0094D9C5 /* Products */;
@@ -168,9 +562,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AE916061E8E8CBF0094D9C5 /* Info.plist in Resources */,
+				4A03001F1E900891001B2014 /* FlightFindButtonTableViewCell.xib in Resources */,
+				4AE916221E8E97100094D9C5 /* Localizable.strings in Resources */,
+				4AE916331E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib in Resources */,
 				4AE916031E8E8CBF0094D9C5 /* LaunchScreen.storyboard in Resources */,
+				4AE916411E8EE3030094D9C5 /* FlightDateTableViewCell.xib in Resources */,
 				4AE916051E8E8CBF0094D9C5 /* Assets.xcassets in Resources */,
+				4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */,
 				4AE916041E8E8CBF0094D9C5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,19 +580,70 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE916511E8EF1750094D9C5 /* Button.swift in Sources */,
+				4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */,
 				4AE9160A1E8E8CFB0094D9C5 /* Blocks.swift in Sources */,
 				4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */,
+				4AE916441E8EE38F0094D9C5 /* Font.swift in Sources */,
+				4AE9160F1E8E93220094D9C5 /* ConfigurationHolder.swift in Sources */,
 				4AE916081E8E8CDD0094D9C5 /* Constants.swift in Sources */,
+				4AE9163A1E8E9C230094D9C5 /* TableView.swift in Sources */,
+				4AE916131E8E93650094D9C5 /* ModuleOutput.swift in Sources */,
+				4AE9164E1E8EE5DD0094D9C5 /* DateTextField.swift in Sources */,
+				4AE916151E8E93810094D9C5 /* RouterTransitionHandler.swift in Sources */,
+				4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */,
+				4A03001E1E900891001B2014 /* FlightFindButtonTableViewCell.swift in Sources */,
+				4A0300211E9009D3001B2014 /* FindButton.swift in Sources */,
+				4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */,
+				4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */,
+				4AE9162E1E8E98840094D9C5 /* BlueNavigationBar.swift in Sources */,
+				4AE9163D1E8E9DF00094D9C5 /* Color.swift in Sources */,
+				4AE9161A1E8E93D80094D9C5 /* ViewController.swift in Sources */,
+				4AE9164C1E8EE5A80094D9C5 /* TextField.swift in Sources */,
+				4AE916371E8E9B130094D9C5 /* FlightAdapter.swift in Sources */,
+				4AE916111E8E93560094D9C5 /* ModuleInput.swift in Sources */,
+				4AE916171E8E93A00094D9C5 /* RouterViewController.swift in Sources */,
+				4AE916491E8EE41A0094D9C5 /* TransparentBlueLabel.swift in Sources */,
+				4AE916531E8EF1A10094D9C5 /* TransparentBorderedButton.swift in Sources */,
+				982AD5F0C92D3C6EFBBAC115 /* FlightModuleInitializer.swift in Sources */,
+				D32EC2AEE8D1706AB1B43616 /* FlightModuleConfigurator.swift in Sources */,
+				4AE916471E8EE3F50094D9C5 /* Label.swift in Sources */,
+				FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */,
+				422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */,
+				B4141DCE9470B251451B388B /* FlightInteractorOutput.swift in Sources */,
+				4AE916401E8EE3030094D9C5 /* FlightDateTableViewCell.swift in Sources */,
+				7B0A6D8955EA68719344E6A0 /* FlightRouter.swift in Sources */,
+				4AE916291E8E97CE0094D9C5 /* String+localization.swift in Sources */,
+				4AE916321E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift in Sources */,
+				2C1703E9C4C58C60D8C56312 /* FlightRouterInput.swift in Sources */,
+				EF52E6B1AB0E692FB7752218 /* FlightPresenter.swift in Sources */,
+				1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */,
+				B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */,
+				E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */,
+				70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AE916241E8E97100094D9C5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AE916231E8E97100094D9C5 /* en */,
+				4AE916251E8E971F0094D9C5 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		4AE915F31E8E8C2E0094D9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -232,7 +681,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -245,6 +694,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -276,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -289,7 +739,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QYFE8U765U;
-				INFOPLIST_FILE = utair/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/utair/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.teedee.utair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,7 +752,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QYFE8U765U;
-				INFOPLIST_FILE = utair/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/utair/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.teedee.utair;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -329,6 +779,7 @@
 				4AE915F71E8E8C2E0094D9C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
