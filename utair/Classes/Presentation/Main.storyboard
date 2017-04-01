@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,17 +25,31 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44a-eU-eZV" customClass="FindButton" customModule="utair" customModuleProvider="target">
+                                <rect key="frame" x="28" y="601" width="319" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="VEk-qQ-hGt"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="findButtonAction:" destination="Uzv-9G-Pgk" eventType="touchUpInside" id="uoC-gm-sfW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="44a-eU-eZV" secondAttribute="trailing" constant="12" id="FSu-kd-S6h"/>
                             <constraint firstItem="ACe-bC-AZy" firstAttribute="bottom" secondItem="cQ9-mW-rNg" secondAttribute="top" id="HKa-4A-3bn"/>
                             <constraint firstAttribute="trailing" secondItem="ACe-bC-AZy" secondAttribute="trailing" id="OtH-U4-pbp"/>
+                            <constraint firstItem="cQ9-mW-rNg" firstAttribute="top" secondItem="44a-eU-eZV" secondAttribute="bottom" constant="16" id="UVX-Zb-hCD"/>
                             <constraint firstItem="ACe-bC-AZy" firstAttribute="top" secondItem="okg-wz-aJw" secondAttribute="top" id="X3M-YN-dOP"/>
+                            <constraint firstItem="44a-eU-eZV" firstAttribute="leading" secondItem="okg-wz-aJw" secondAttribute="leadingMargin" constant="12" id="XP9-KZ-3A8"/>
                             <constraint firstItem="ACe-bC-AZy" firstAttribute="leading" secondItem="okg-wz-aJw" secondAttribute="leading" id="Xdi-Vi-sUg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BiD-EM-NTt"/>
                     <connections>
+                        <outlet property="findButton" destination="44a-eU-eZV" id="ySU-DD-165"/>
                         <outlet property="tableView" destination="ACe-bC-AZy" id="jKp-Bm-Pw8"/>
                     </connections>
                 </viewController>

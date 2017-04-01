@@ -12,8 +12,6 @@
 		422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */; };
 		4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300181E8FF09E001B2014 /* PlusButton.swift */; };
 		4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001A1E8FFB39001B2014 /* MinusButton.swift */; };
-		4A03001E1E900891001B2014 /* FlightFindButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */; };
-		4A03001F1E900891001B2014 /* FlightFindButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */; };
 		4A0300211E9009D3001B2014 /* FindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300201E9009D3001B2014 /* FindButton.swift */; };
 		4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */; };
 		4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */; };
@@ -69,8 +67,6 @@
 		427DA3BDFF9236196B8DCDC9 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
 		4A0300181E8FF09E001B2014 /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		4A03001A1E8FFB39001B2014 /* MinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
-		4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightFindButtonTableViewCell.swift; sourceTree = "<group>"; };
-		4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightFindButtonTableViewCell.xib; sourceTree = "<group>"; };
 		4A0300201E9009D3001B2014 /* FindButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindButton.swift; sourceTree = "<group>"; };
 		4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPeopleTableViewCell.xib; sourceTree = "<group>"; };
@@ -313,8 +309,6 @@
 				4AE9163F1E8EE3030094D9C5 /* FlightDateTableViewCell.xib */,
 				4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */,
 				4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */,
-				4A03001C1E900891001B2014 /* FlightFindButtonTableViewCell.swift */,
-				4A03001D1E900891001B2014 /* FlightFindButtonTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -562,7 +556,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A03001F1E900891001B2014 /* FlightFindButtonTableViewCell.xib in Resources */,
 				4AE916221E8E97100094D9C5 /* Localizable.strings in Resources */,
 				4AE916331E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib in Resources */,
 				4AE916031E8E8CBF0094D9C5 /* LaunchScreen.storyboard in Resources */,
@@ -592,7 +585,6 @@
 				4AE9164E1E8EE5DD0094D9C5 /* DateTextField.swift in Sources */,
 				4AE916151E8E93810094D9C5 /* RouterTransitionHandler.swift in Sources */,
 				4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */,
-				4A03001E1E900891001B2014 /* FlightFindButtonTableViewCell.swift in Sources */,
 				4A0300211E9009D3001B2014 /* FindButton.swift in Sources */,
 				4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */,
 				4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */,

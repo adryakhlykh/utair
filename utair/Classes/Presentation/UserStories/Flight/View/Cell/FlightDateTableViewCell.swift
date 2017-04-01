@@ -39,7 +39,7 @@ class FlightDateTableViewCell: UITableViewCell {
     // MARK: Properties
     
     var keyboardShowBlock: KeyboardHeightBlock?
-    var keyboardHideBlock: KeyboardHeightBlock?
+    var keyboardHideBlock: EmptyBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -88,13 +88,7 @@ class FlightDateTableViewCell: UITableViewCell {
     }
     
     func keyboardDidHide(notification: Notification) {
-        if let userInfo = notification.userInfo {
-            if let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue {
-                let keyboardRectangle = keyboardFrame.cgRectValue
-                let keyboardHeight = keyboardRectangle.height
-                keyboardHideBlock?(keyboardHeight)
-            }
-        }
+        keyboardHideBlock?()
     }
     
     // MARK: Private helpers

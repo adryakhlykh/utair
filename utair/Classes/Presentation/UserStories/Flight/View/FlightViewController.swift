@@ -13,6 +13,11 @@ class FlightViewController: RouterViewController, FlightViewInput {
     // MARK: IBOutlets
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var findButton: FindButton!
+    
+    // MARK: IBActions
+    
+    @IBAction func findButtonAction(_ sender: Any) { }
     
 	// MARK: Properties
 	
@@ -31,6 +36,7 @@ class FlightViewController: RouterViewController, FlightViewInput {
     func showTitle(withTitle title: String) { self.title = title }
 
     func setupView() {
+        findButton.setTitle("FLIGT.BUTTON.FIND".localized, for: .normal)
         tableView.backgroundColor = Color.blue
         let adapter = FlightAdapter(tableView: tableView)
         tableView.dataSource = adapter

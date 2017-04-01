@@ -13,3 +13,6 @@ typealias ConfigurationBlock = (ModuleInput) -> (ModuleOutput?)
 
 /// Keyboard showed/hidden block with Int parameter.
 typealias KeyboardHeightBlock = (CGFloat) -> ()
+
+/// Empty block without parameter.
+typealias EmptyBlock = () -> ()

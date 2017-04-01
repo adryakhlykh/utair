@@ -6,6 +6,4 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-import UIKit
 
-let iphone4SScreenHeight = CGFloat(480)

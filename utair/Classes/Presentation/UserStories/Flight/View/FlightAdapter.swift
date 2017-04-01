@@ -15,9 +15,8 @@ class FlightAdapter: NSObject {
     fileprivate let cityTableViewCell = String(describing: FlightCityTableViewCell.self)
     fileprivate let dateTableViewCell = String(describing: FlightDateTableViewCell.self)
     fileprivate let peopleTableViewCell = String(describing: FlightPeopleTableViewCell.self)
-    fileprivate let findButtonTableViewCell = String(describing: FlightFindButtonTableViewCell.self)
-    
-    fileprivate let cellsCount = 4
+    fileprivate let cellsCount = 3
+    fileprivate let iphone4SScreenHeight = CGFloat(480)
     
     // MARK: Properties
     
@@ -30,7 +29,6 @@ class FlightAdapter: NSObject {
         tableView.register(UINib(nibName: cityTableViewCell, bundle: nil), forCellReuseIdentifier: cityTableViewCell)
         tableView.register(UINib(nibName: dateTableViewCell, bundle: nil), forCellReuseIdentifier: dateTableViewCell)
         tableView.register(UINib(nibName: peopleTableViewCell, bundle: nil), forCellReuseIdentifier: peopleTableViewCell)
-        tableView.register(UINib(nibName: findButtonTableViewCell, bundle: nil), forCellReuseIdentifier: findButtonTableViewCell)
     }
 }
 
@@ -49,22 +47,19 @@ extension FlightAdapter: UITableViewDataSource {
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: dateTableViewCell, for: indexPath) as! FlightDateTableViewCell
-                cell.keyboardShowBlock = { height in
-                    if tableView.frame.height <= iphone4SScreenHeight {
+                cell.keyboardShowBlock = { [weak self] height in
+                    if tableView.frame.height <= self?.iphone4SScreenHeight ?? 0 {
                         tableView.setContentOffset(CGPoint(x: 0, y: height / 2), animated: true)
                     }
                 }
-                cell.keyboardHideBlock = { height in
-                    if tableView.frame.height <= iphone4SScreenHeight {
+                cell.keyboardHideBlock = { [weak self] in
+                    if tableView.frame.height <= self?.iphone4SScreenHeight ?? 0 {
                         tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
                     }
                 }
                 return cell
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: peopleTableViewCell, for: indexPath) as! FlightPeopleTableViewCell
-                return cell
-            case 3:
-                let cell = tableView.dequeueReusableCell(withIdentifier: findButtonTableViewCell, for: indexPath) as! FlightFindButtonTableViewCell
                 return cell
             default:
                 return UITableViewCell()
