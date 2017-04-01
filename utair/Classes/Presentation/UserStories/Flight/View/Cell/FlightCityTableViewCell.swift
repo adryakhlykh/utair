@@ -21,22 +21,45 @@ class FlightCityTableViewCell: UITableViewCell {
     @IBOutlet weak var toSubtitleLabel: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     @IBOutlet weak var toView: UIView!
+    @IBOutlet weak var fromView: UIView!
     
     // MARK: IBActions
 
-    @IBAction func changeButtonAction(_ sender: Any) { print("tap") }
+    @IBAction func changeButtonAction(_ sender: Any) {
+        let toText = toTitleLabel.text
+        toTitleLabel.text = fromTitleLabel.text
+        fromTitleLabel.text = toText
+    }
+    
+    // MARK: Properties
+    
+    var fromBlock: StringBlock?
+    var toBlock: StringBlock?
     
     // MARK: UIKit
     
     override func awakeFromNib() {
         super.awakeFromNib()
         setupStyle()
+        setupRecognizers()
     }
     
     // MARK: Internal helpers
     
-    func fill(withIndex index: Int) {
-        
+    func tapOnFromView() {
+        if let text = fromTitleLabel.text { fromBlock?(text) }
+    }
+    
+    func tapOnToView() {
+        if let text = toTitleLabel.text { toBlock?(text) }
+    }
+    
+    func fill(withFromCity city: City) {
+        fromTitleLabel.text = city.id.description
+    }
+    
+    func fill(withToCity city: City) {
+        toTitleLabel.text = city.id.description
     }
     
     // MARK: Private helpers
@@ -88,5 +111,12 @@ class FlightCityTableViewCell: UITableViewCell {
         emptyCircleImageView.tintColor = .white
         filledCircleImageView.tintColor = .white
         dotsImageView.tintColor = .white
+    }
+    
+    private func setupRecognizers() {
+        let fromViewGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnFromView))
+        let toViewGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapOnToView))
+        fromView.addGestureRecognizer(fromViewGestureRecognizer)
+        toView.addGestureRecognizer(toViewGestureRecognizer)
     }
 }

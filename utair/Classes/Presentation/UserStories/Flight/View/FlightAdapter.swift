@@ -21,6 +21,10 @@ class FlightAdapter: NSObject {
     // MARK: Properties
     
     private var tableView: UITableView
+    var fromCity: City?
+    var toCity: City?
+    var fromBlock: StringBlock?
+    var toBlock: StringBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -43,7 +47,10 @@ extension FlightAdapter: UITableViewDataSource {
         switch indexPath.row {
             case 0:
                 let cell = tableView.dequeueReusableCell(withIdentifier: cityTableViewCell, for: indexPath) as! FlightCityTableViewCell
-                cell.fill(withIndex: indexPath.row)
+                if let city = fromCity { cell.fill(withFromCity: city) }
+                if let city = toCity { cell.fill(withToCity: city) }
+                cell.fromBlock = { [weak self] text in self?.fromBlock?(text) }
+                cell.toBlock = { [weak self] text in self?.toBlock?(text) }
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: dateTableViewCell, for: indexPath) as! FlightDateTableViewCell

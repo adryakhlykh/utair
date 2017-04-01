@@ -7,12 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02C075BAD34A5B8556FE827E /* CityModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43B2338E4C4AD81A6A12656 /* CityModuleConfigurator.swift */; };
+		17B119023DFD34E8978C2EB4 /* CityModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE29B91884347E532ECDF54 /* CityModuleInitializer.swift */; };
 		1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */; };
+		288F50E7243D1BCA5EF640D2 /* CityInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A47080E9752968B7DB03789 /* CityInteractorOutput.swift */; };
 		2C1703E9C4C58C60D8C56312 /* FlightRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */; };
+		3CD15039E1D9B686B300B116 /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80BD286E4D2ECC32B90EAB /* CityRouter.swift */; };
 		422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */; };
 		4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300181E8FF09E001B2014 /* PlusButton.swift */; };
 		4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03001A1E8FFB39001B2014 /* MinusButton.swift */; };
 		4A0300211E9009D3001B2014 /* FindButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300201E9009D3001B2014 /* FindButton.swift */; };
+		4A0300241E902295001B2014 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300231E902295001B2014 /* Entity.swift */; };
+		4A0300261E9022AB001B2014 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300251E9022AB001B2014 /* City.swift */; };
+		4A0300281E9027C9001B2014 /* CityModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300271E9027C9001B2014 /* CityModuleOutput.swift */; };
+		4A03002A1E902BDB001B2014 /* WhiteNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300291E902BDB001B2014 /* WhiteNavigationBar.swift */; };
+		4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03002B1E9030E7001B2014 /* CityTextField.swift */; };
+		4A03002E1E90350E001B2014 /* CityAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03002D1E90350E001B2014 /* CityAdapter.swift */; };
+		4A0300321E903532001B2014 /* CityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300301E903532001B2014 /* CityTableViewCell.swift */; };
+		4A0300331E903532001B2014 /* CityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A0300311E903532001B2014 /* CityTableViewCell.xib */; };
+		4A0300351E90357E001B2014 /* BoldWhiteLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300341E90357E001B2014 /* BoldWhiteLabel.swift */; };
 		4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */; };
 		4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */; };
 		4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE915FA1E8E8CBF0094D9C5 /* AppDelegate.swift */; };
@@ -46,11 +59,19 @@
 		4AE916511E8EF1750094D9C5 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916501E8EF1750094D9C5 /* Button.swift */; };
 		4AE916531E8EF1A10094D9C5 /* TransparentBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */; };
 		70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */; };
+		76658DA2721469AB4D13C185 /* CityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF231E86C927CFCC43503A /* CityViewInput.swift */; };
+		76791414B804701D00433C47 /* CityModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B11A31B027800FCCAC6D7 /* CityModuleInput.swift */; };
 		7B0A6D8955EA68719344E6A0 /* FlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20DBC390BF58807E6C7DA /* FlightRouter.swift */; };
+		7F280FA98B52E4F371CBB42B /* CityInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D5F729F0391BEE5309180E /* CityInteractorInput.swift */; };
+		81BAF9E0CE1022C9AA595739 /* CityRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FA9F02FD824B6D73B07E84 /* CityRouterInput.swift */; };
+		8903A6E6C4CF1E35C3252C5B /* CityViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F74328F59AEA4C520B0454 /* CityViewOutput.swift */; };
 		982AD5F0C92D3C6EFBBAC115 /* FlightModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */; };
+		9E0A3062858EABEEADAC73E0 /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336DBD304D141C211FA75B /* CityInteractor.swift */; };
 		B4141DCE9470B251451B388B /* FlightInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */; };
 		B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB03E00455C84E8C92388A1 /* FlightViewController.swift */; };
 		D32EC2AEE8D1706AB1B43616 /* FlightModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */; };
+		D4D22CB591E674EDDB27D216 /* CityPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846874862EF557EE17DDDC5F /* CityPresenter.swift */; };
+		D624EBEE0B98CC9830A65511 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71858DD9541D6DB614BC8C5 /* CityViewController.swift */; };
 		E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */; };
 		EF52E6B1AB0E692FB7752218 /* FlightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */; };
 		FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */; };
@@ -59,8 +80,10 @@
 /* Begin PBXFileReference section */
 		08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
 		08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
+		09F74328F59AEA4C520B0454 /* CityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewOutput.swift; sourceTree = "<group>"; };
 		0CB03E00455C84E8C92388A1 /* FlightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		1B820D6D73A53B60CCC990A7 /* FlightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
+		24D5F729F0391BEE5309180E /* CityInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorInput.swift; sourceTree = "<group>"; };
 		287A26DE2ACB2A68A0E2ABA5 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
 		2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInput.swift; sourceTree = "<group>"; };
 		30E20DBC390BF58807E6C7DA /* FlightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
@@ -68,8 +91,18 @@
 		4A0300181E8FF09E001B2014 /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		4A03001A1E8FFB39001B2014 /* MinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
 		4A0300201E9009D3001B2014 /* FindButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindButton.swift; sourceTree = "<group>"; };
+		4A0300231E902295001B2014 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		4A0300251E9022AB001B2014 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4A0300271E9027C9001B2014 /* CityModuleOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityModuleOutput.swift; sourceTree = "<group>"; };
+		4A0300291E902BDB001B2014 /* WhiteNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WhiteNavigationBar.swift; sourceTree = "<group>"; };
+		4A03002B1E9030E7001B2014 /* CityTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTextField.swift; sourceTree = "<group>"; };
+		4A03002D1E90350E001B2014 /* CityAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityAdapter.swift; sourceTree = "<group>"; };
+		4A0300301E903532001B2014 /* CityTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityTableViewCell.swift; sourceTree = "<group>"; };
+		4A0300311E903532001B2014 /* CityTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CityTableViewCell.xib; sourceTree = "<group>"; };
+		4A0300341E90357E001B2014 /* BoldWhiteLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoldWhiteLabel.swift; sourceTree = "<group>"; };
 		4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPeopleTableViewCell.xib; sourceTree = "<group>"; };
+		4A47080E9752968B7DB03789 /* CityInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorOutput.swift; sourceTree = "<group>"; };
 		4AE915E31E8E8C2E0094D9C5 /* utair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = utair.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AE915FA1E8E8CBF0094D9C5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AE915FC1E8E8CBF0094D9C5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -103,11 +136,16 @@
 		4AE9164D1E8EE5DD0094D9C5 /* DateTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTextField.swift; sourceTree = "<group>"; };
 		4AE916501E8EF1750094D9C5 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBorderedButton.swift; sourceTree = "<group>"; };
+		4E336DBD304D141C211FA75B /* CityInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
+		53FA9F02FD824B6D73B07E84 /* CityRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouterInput.swift; sourceTree = "<group>"; };
 		5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
 		631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
 		63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
 		6B5C53078852388D0DD82FA2 /* FlightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewOutput.swift; sourceTree = "<group>"; };
+		6B80BD286E4D2ECC32B90EAB /* CityRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouter.swift; sourceTree = "<group>"; };
 		6C85DDCA82F26F17BFC878BF /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
+		803B11A31B027800FCCAC6D7 /* CityModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModuleInput.swift; sourceTree = "<group>"; };
+		846874862EF557EE17DDDC5F /* CityPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityPresenter.swift; sourceTree = "<group>"; };
 		967098DD9DABF7648FABCF8E /* FlightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
 		A001834A2C002054B85437BC /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
 		C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
@@ -115,9 +153,13 @@
 		CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
 		D095647239DC3A07020E156E /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
 		DB6F62D8F4D671B8295363D0 /* FlightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInput.swift; sourceTree = "<group>"; };
+		E43B2338E4C4AD81A6A12656 /* CityModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModuleConfigurator.swift; sourceTree = "<group>"; };
+		E71858DD9541D6DB614BC8C5 /* CityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		EA4F6FB268A0F67DE467361E /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
+		EAE29B91884347E532ECDF54 /* CityModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModuleInitializer.swift; sourceTree = "<group>"; };
 		F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
 		F24004C484D9EBA3603DD323 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
+		F7CF231E86C927CFCC43503A /* CityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewInput.swift; sourceTree = "<group>"; };
 		FD4DE5B53E86C0F6397046EA /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,6 +193,45 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		263AE6C72FB155DB480F41E8 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				6B80BD286E4D2ECC32B90EAB /* CityRouter.swift */,
+				53FA9F02FD824B6D73B07E84 /* CityRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4668F8A868DBD777D0424C70 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A03002F1E903523001B2014 /* Cell */,
+				4A03002D1E90350E001B2014 /* CityAdapter.swift */,
+				E71858DD9541D6DB614BC8C5 /* CityViewController.swift */,
+				F7CF231E86C927CFCC43503A /* CityViewInput.swift */,
+				09F74328F59AEA4C520B0454 /* CityViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A0300221E902284001B2014 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300231E902295001B2014 /* Entity.swift */,
+				4A0300251E9022AB001B2014 /* City.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A03002F1E903523001B2014 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				4A0300301E903532001B2014 /* CityTableViewCell.swift */,
+				4A0300311E903532001B2014 /* CityTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4AE915DA1E8E8C2E0094D9C5 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +263,7 @@
 			isa = PBXGroup;
 			children = (
 				4AE915F91E8E8CBF0094D9C5 /* Application */,
+				4A0300221E902284001B2014 /* Model */,
 				4AE915FB1E8E8CBF0094D9C5 /* Presentation */,
 				4AE916261E8E97AD0094D9C5 /* Utils */,
 			);
@@ -232,6 +314,7 @@
 			children = (
 				4AE9160C1E8E92F30094D9C5 /* Common */,
 				DD3FB3359B6AB7BC6DF76EB0 /* Flight */,
+				589E5E2A55646AC13A8D9620 /* City */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -296,6 +379,7 @@
 			children = (
 				4AE9162B1E8E986C0094D9C5 /* NavigationBar.swift */,
 				4AE9162D1E8E98840094D9C5 /* BlueNavigationBar.swift */,
+				4A0300291E902BDB001B2014 /* WhiteNavigationBar.swift */,
 			);
 			path = NavigationBar;
 			sourceTree = "<group>";
@@ -345,6 +429,7 @@
 			children = (
 				4AE916461E8EE3F50094D9C5 /* Label.swift */,
 				4AE916481E8EE41A0094D9C5 /* TransparentBlueLabel.swift */,
+				4A0300341E90357E001B2014 /* BoldWhiteLabel.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -354,6 +439,7 @@
 			children = (
 				4AE9164B1E8EE5A80094D9C5 /* TextField.swift */,
 				4AE9164D1E8EE5DD0094D9C5 /* DateTextField.swift */,
+				4A03002B1E9030E7001B2014 /* CityTextField.swift */,
 			);
 			path = TextField;
 			sourceTree = "<group>";
@@ -368,6 +454,18 @@
 				4A0300201E9009D3001B2014 /* FindButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		589E5E2A55646AC13A8D9620 /* City */ = {
+			isa = PBXGroup;
+			children = (
+				D2DAA2066306DE9B54AEF4FE /* Assembly */,
+				B325F8B7199FB1F965C94737 /* Interactor */,
+				263AE6C72FB155DB480F41E8 /* Router */,
+				93A41F6D71B424C4DED38334 /* Presenter */,
+				4668F8A868DBD777D0424C70 /* View */,
+			);
+			path = City;
 			sourceTree = "<group>";
 		};
 		617B01A46119ECEDAA19EB03 /* Classes */ = {
@@ -413,6 +511,16 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		93A41F6D71B424C4DED38334 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				846874862EF557EE17DDDC5F /* CityPresenter.swift */,
+				803B11A31B027800FCCAC6D7 /* CityModuleInput.swift */,
+				4A0300271E9027C9001B2014 /* CityModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		A0C9660D8E802728FFDBD756 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,6 +537,16 @@
 				D095647239DC3A07020E156E /* FlightInteractor.swift */,
 				287A26DE2ACB2A68A0E2ABA5 /* FlightInteractorInput.swift */,
 				6C85DDCA82F26F17BFC878BF /* FlightInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B325F8B7199FB1F965C94737 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				4E336DBD304D141C211FA75B /* CityInteractor.swift */,
+				24D5F729F0391BEE5309180E /* CityInteractorInput.swift */,
+				4A47080E9752968B7DB03789 /* CityInteractorOutput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -455,6 +573,15 @@
 			children = (
 				5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */,
 				08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		D2DAA2066306DE9B54AEF4FE /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EAE29B91884347E532ECDF54 /* CityModuleInitializer.swift */,
+				E43B2338E4C4AD81A6A12656 /* CityModuleConfigurator.swift */,
 			);
 			path = Assembly;
 			sourceTree = "<group>";
@@ -558,6 +685,7 @@
 			files = (
 				4AE916221E8E97100094D9C5 /* Localizable.strings in Resources */,
 				4AE916331E8E9AEF0094D9C5 /* FlightCityTableViewCell.xib in Resources */,
+				4A0300331E903532001B2014 /* CityTableViewCell.xib in Resources */,
 				4AE916031E8E8CBF0094D9C5 /* LaunchScreen.storyboard in Resources */,
 				4AE916411E8EE3030094D9C5 /* FlightDateTableViewCell.xib in Resources */,
 				4AE916051E8E8CBF0094D9C5 /* Assets.xcassets in Resources */,
@@ -575,13 +703,16 @@
 			files = (
 				4AE916511E8EF1750094D9C5 /* Button.swift in Sources */,
 				4A0300191E8FF09E001B2014 /* PlusButton.swift in Sources */,
+				4A0300261E9022AB001B2014 /* City.swift in Sources */,
 				4AE9160A1E8E8CFB0094D9C5 /* Blocks.swift in Sources */,
 				4AE916021E8E8CBF0094D9C5 /* AppDelegate.swift in Sources */,
 				4AE916441E8EE38F0094D9C5 /* Font.swift in Sources */,
+				4A03002E1E90350E001B2014 /* CityAdapter.swift in Sources */,
 				4AE9160F1E8E93220094D9C5 /* ConfigurationHolder.swift in Sources */,
 				4AE916081E8E8CDD0094D9C5 /* Constants.swift in Sources */,
 				4AE9163A1E8E9C230094D9C5 /* TableView.swift in Sources */,
 				4AE916131E8E93650094D9C5 /* ModuleOutput.swift in Sources */,
+				4A0300321E903532001B2014 /* CityTableViewCell.swift in Sources */,
 				4AE9164E1E8EE5DD0094D9C5 /* DateTextField.swift in Sources */,
 				4AE916151E8E93810094D9C5 /* RouterTransitionHandler.swift in Sources */,
 				4A03001B1E8FFB39001B2014 /* MinusButton.swift in Sources */,
@@ -589,6 +720,7 @@
 				4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */,
 				4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */,
 				4AE9162E1E8E98840094D9C5 /* BlueNavigationBar.swift in Sources */,
+				4A03002A1E902BDB001B2014 /* WhiteNavigationBar.swift in Sources */,
 				4AE9163D1E8E9DF00094D9C5 /* Color.swift in Sources */,
 				4AE9161A1E8E93D80094D9C5 /* ViewController.swift in Sources */,
 				4AE9164C1E8EE5A80094D9C5 /* TextField.swift in Sources */,
@@ -598,7 +730,9 @@
 				4AE916491E8EE41A0094D9C5 /* TransparentBlueLabel.swift in Sources */,
 				4AE916531E8EF1A10094D9C5 /* TransparentBorderedButton.swift in Sources */,
 				982AD5F0C92D3C6EFBBAC115 /* FlightModuleInitializer.swift in Sources */,
+				4A0300351E90357E001B2014 /* BoldWhiteLabel.swift in Sources */,
 				D32EC2AEE8D1706AB1B43616 /* FlightModuleConfigurator.swift in Sources */,
+				4A0300241E902295001B2014 /* Entity.swift in Sources */,
 				4AE916471E8EE3F50094D9C5 /* Label.swift in Sources */,
 				FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */,
 				422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */,
@@ -613,6 +747,20 @@
 				B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */,
 				E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */,
 				70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */,
+				4A0300281E9027C9001B2014 /* CityModuleOutput.swift in Sources */,
+				17B119023DFD34E8978C2EB4 /* CityModuleInitializer.swift in Sources */,
+				02C075BAD34A5B8556FE827E /* CityModuleConfigurator.swift in Sources */,
+				9E0A3062858EABEEADAC73E0 /* CityInteractor.swift in Sources */,
+				4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */,
+				7F280FA98B52E4F371CBB42B /* CityInteractorInput.swift in Sources */,
+				288F50E7243D1BCA5EF640D2 /* CityInteractorOutput.swift in Sources */,
+				3CD15039E1D9B686B300B116 /* CityRouter.swift in Sources */,
+				81BAF9E0CE1022C9AA595739 /* CityRouterInput.swift in Sources */,
+				D4D22CB591E674EDDB27D216 /* CityPresenter.swift in Sources */,
+				76791414B804701D00433C47 /* CityModuleInput.swift in Sources */,
+				D624EBEE0B98CC9830A65511 /* CityViewController.swift in Sources */,
+				76658DA2721469AB4D13C185 /* CityViewInput.swift in Sources */,
+				8903A6E6C4CF1E35C3252C5B /* CityViewOutput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,29 +11,30 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="FlightCityTableViewCell" customModule="utair" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="FlightCityTableViewCell" customModule="utair" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="124"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="123.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KD2-mT-ZeC">
-                        <rect key="frame" x="57" y="0.0" width="193" height="62"/>
+                        <rect key="frame" x="64" y="3" width="179" height="59.5"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-Zl-UTg">
-                                <rect key="frame" x="0.0" y="8" width="193" height="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2B-Zl-UTg" customClass="BoldWhiteLabel" customModule="utair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="8" width="179" height="25"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmu-i7-dhm" customClass="TransparentBlueLabel" customModule="utair" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="29" width="193" height="19.5"/>
+                                <rect key="frame" x="0.0" y="29" width="179" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="rmu-i7-dhm" secondAttribute="bottom" constant="13.5" id="0sO-mJ-XXE"/>
                             <constraint firstItem="h2B-Zl-UTg" firstAttribute="leading" secondItem="KD2-mT-ZeC" secondAttribute="leading" id="3Fo-tL-MIu"/>
@@ -45,32 +46,33 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dyc-Tf-I0K">
-                        <rect key="frame" x="57" y="62" width="193" height="62"/>
+                        <rect key="frame" x="64" y="62.5" width="179" height="59"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKB-bE-Nc7">
-                                <rect key="frame" x="0.0" y="28" width="193" height="7.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKB-bE-Nc7" customClass="BoldWhiteLabel" customModule="utair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="31" width="179" height="6"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U23-3c-x1G" customClass="TransparentBlueLabel" customModule="utair" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="39.5" width="193" height="0.0"/>
+                                <rect key="frame" x="0.0" y="41" width="179" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="1" green="0.0093617555430000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="bKB-bE-Nc7" firstAttribute="leading" secondItem="dyc-Tf-I0K" secondAttribute="leading" id="9Wz-xZ-qjj"/>
                             <constraint firstItem="U23-3c-x1G" firstAttribute="trailing" secondItem="bKB-bE-Nc7" secondAttribute="trailing" id="9da-IN-8H8"/>
                             <constraint firstAttribute="trailing" secondItem="bKB-bE-Nc7" secondAttribute="trailing" id="Eof-lF-kpL"/>
                             <constraint firstItem="U23-3c-x1G" firstAttribute="leading" secondItem="bKB-bE-Nc7" secondAttribute="leading" id="WXO-EF-rgf"/>
-                            <constraint firstAttribute="bottom" secondItem="U23-3c-x1G" secondAttribute="bottom" constant="22" id="ZWE-X8-K9b"/>
+                            <constraint firstAttribute="bottom" secondItem="U23-3c-x1G" secondAttribute="bottom" constant="18" id="ZWE-X8-K9b"/>
                             <constraint firstItem="U23-3c-x1G" firstAttribute="top" secondItem="bKB-bE-Nc7" secondAttribute="bottom" constant="4" id="pxq-je-GYH"/>
                         </constraints>
                     </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7O-bn-xF3">
-                        <rect key="frame" x="250" y="43" width="38" height="38"/>
+                        <rect key="frame" x="243" y="43" width="38" height="38"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="38" id="1vL-9a-nqB"/>
                             <constraint firstAttribute="height" constant="38" id="hF5-PT-hOu"/>
@@ -80,21 +82,21 @@
                         </connections>
                     </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8LF-Px-loM">
-                        <rect key="frame" x="32" y="16" width="9" height="9"/>
+                        <rect key="frame" x="39" y="19" width="9" height="9"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="9" id="JpF-51-hd2"/>
                             <constraint firstAttribute="width" constant="9" id="i7f-II-Buy"/>
                         </constraints>
                     </imageView>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gvq-f2-feM">
-                        <rect key="frame" x="36" y="33" width="2" height="48"/>
+                        <rect key="frame" x="43" y="36" width="2" height="48"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="2" id="Bim-aM-Drs"/>
                             <constraint firstAttribute="height" constant="48" id="vch-SV-iI9"/>
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aTj-fD-RpJ">
-                        <rect key="frame" x="32" y="89" width="9" height="9"/>
+                        <rect key="frame" x="39" y="92" width="9" height="9"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="9" id="aJX-HW-WCz"/>
                             <constraint firstAttribute="width" constant="9" id="ftW-N6-jvw"/>
@@ -129,6 +131,7 @@
                 <outlet property="filledCircleImageView" destination="aTj-fD-RpJ" id="H0L-Mq-RRi"/>
                 <outlet property="fromSubtitleLabel" destination="rmu-i7-dhm" id="bkb-yC-Szy"/>
                 <outlet property="fromTitleLabel" destination="h2B-Zl-UTg" id="FJc-Lt-IrT"/>
+                <outlet property="fromView" destination="KD2-mT-ZeC" id="G4N-Gg-xhR"/>
                 <outlet property="toSubtitleLabel" destination="U23-3c-x1G" id="pY4-n5-apr"/>
                 <outlet property="toTitleLabel" destination="bKB-bE-Nc7" id="Ghb-3L-h6a"/>
                 <outlet property="toView" destination="dyc-Tf-I0K" id="MJ3-mJ-QBN"/>

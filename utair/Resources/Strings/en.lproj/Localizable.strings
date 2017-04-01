@@ -6,9 +6,6 @@
   Copyright © 2017 teedee. All rights reserved.
 */
 
-//TITLE
-"TITLE.FLIGHT" = "UTair";
-
 //FLIGHT
 "FLIGHT.CITY.FROM" = "Откуда";
 "FLIGHT.CITY.TO" = "Куда";

@@ -8,14 +8,20 @@
 
 protocol FlightViewInput: class {
 
-    
-    /// Метод для отображения заголовка
-    /// 
-    /// - Parameter title: строка заголовка
-
-    func showTitle(withTitle title: String)
-
     /// Метод для настройки вью
 
     func setupView()
+    
+    /// Метод для настройки вью
+    ///
+    /// - Parameter city: город "Откуда"
+    
+    func setupView(withFromCity city: City)
+    
+    
+    /// Метод для настройки вью
+    ///
+    /// - Parameter city: город "Куда"
+    
+    func setupView(withToCity city: City)
 }

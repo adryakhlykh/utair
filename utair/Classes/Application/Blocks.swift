@@ -16,3 +16,9 @@ typealias KeyboardHeightBlock = (CGFloat) -> ()
 
 /// Empty block without parameter.
 typealias EmptyBlock = () -> ()
+
+/// Item clicked block with String parameter.
+typealias StringBlock = (String) -> ()
+
+/// Item clicked block with City parameter.
+typealias CityBlock = (City) -> ()

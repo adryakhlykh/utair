@@ -14,5 +14,6 @@ class TableView: UITableView {
         separatorStyle = .none
         rowHeight = UITableViewAutomaticDimension
         estimatedRowHeight = 200
+        backgroundColor = Color.blue
     }
 }

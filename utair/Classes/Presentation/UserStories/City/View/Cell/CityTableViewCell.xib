@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="67" id="KGk-i7-Jjw" customClass="CityTableViewCell" customModule="utair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="67"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="66.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K4c-KU-Vpy" customClass="BoldWhiteLabel" customModule="utair" customModuleProvider="target">
+                        <rect key="frame" x="68" y="8" width="244" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e80-Bw-Kao" customClass="TransparentBlueLabel" customModule="utair" customModuleProvider="target">
+                        <rect key="frame" x="68" y="35" width="244" height="23"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="e80-Bw-Kao" firstAttribute="trailing" secondItem="K4c-KU-Vpy" secondAttribute="trailing" id="D9c-SU-cgu"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="K4c-KU-Vpy" secondAttribute="leading" constant="-60" id="QUX-R0-gPC"/>
+                    <constraint firstItem="e80-Bw-Kao" firstAttribute="leading" secondItem="K4c-KU-Vpy" secondAttribute="leading" id="aH8-x9-G53"/>
+                    <constraint firstAttribute="topMargin" secondItem="K4c-KU-Vpy" secondAttribute="top" id="gqH-r6-B24"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="K4c-KU-Vpy" secondAttribute="trailing" id="mod-Ks-R67"/>
+                    <constraint firstItem="e80-Bw-Kao" firstAttribute="top" secondItem="K4c-KU-Vpy" secondAttribute="bottom" constant="6" id="qIo-pa-3fC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="e80-Bw-Kao" secondAttribute="bottom" constant="0.5" id="vX1-rL-Fa4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="subtitleLabel" destination="e80-Bw-Kao" id="kbG-yS-BFH"/>
+                <outlet property="titleLabel" destination="K4c-KU-Vpy" id="5DI-6k-MH1"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="96.5"/>
+        </tableViewCell>
+    </objects>
+</document>

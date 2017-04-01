@@ -10,9 +10,9 @@ import Foundation
 
 protocol FlightRouterInput {
 
-    /// Метод для перехода в <#ModuleName#>
+    /// Метод для конфигурации модуля выбора города
     ///
-    /// - Parameter id: идентификатор Flight объекта
+    /// - Parameter moduleOutput: модуль выбора города информации
     
-    func openModule(withFlightID id: Int)
+    func configureCityModule(withModuleOutput moduleOutput: CityModuleOutput)
 }

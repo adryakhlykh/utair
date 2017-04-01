@@ -6,4 +6,15 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
+let weatherAPIKey = "73c6e19fca36e0fa3ad2e765c10a4726"
+
+struct SegueID {
+    static let city = "ShowCity"
+    static let unwindToFlight = "unwindToFlight"
+}
+
+enum Direction {
+    case to
+    case from
+}
 

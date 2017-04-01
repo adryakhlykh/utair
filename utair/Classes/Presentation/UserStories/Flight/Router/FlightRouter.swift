@@ -14,7 +14,9 @@ class FlightRouter: FlightRouterInput {
 
     // MARK: FlightRouterInput
     
-    func openModule(withFlightID id: Int) {
-
+    func configureCityModule(withModuleOutput moduleOutput: CityModuleOutput) {
+        viewController?.openModule(SegueID.city) { _ in
+            return moduleOutput
+        }
     }
 }

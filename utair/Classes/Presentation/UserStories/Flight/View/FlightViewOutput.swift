@@ -11,4 +11,16 @@ protocol FlightViewOutput {
     /// Метод сообщает презентеру, что вью готова для работы
 
     func setupView()
+    
+    /// Метод сообщает презентеру, что пользователь нажал на вью "Откуда"
+    ///
+    /// - Parameter title: название города
+    
+    func didTapOnFromView(withTitle title: String)
+    
+    /// Метод сообщает презентеру, что пользователь нажал на вью "Куда"
+    ///
+    /// - Parameter title: название города
+    
+    func didTapOnToView(withTitle title: String)
 }

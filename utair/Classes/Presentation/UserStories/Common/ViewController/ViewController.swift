@@ -24,9 +24,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         automaticallyAdjustsScrollViewInsets = false
+        view.backgroundColor = Color.blue
         initBackButton()
         initSpinner()
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle { return .lightContent }
         
     // MARK: ViperRequestViewInput
     
