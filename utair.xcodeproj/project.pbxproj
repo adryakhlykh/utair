@@ -86,10 +86,13 @@
 		D624EBEE0B98CC9830A65511 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71858DD9541D6DB614BC8C5 /* CityViewController.swift */; };
 		E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */; };
 		EF52E6B1AB0E692FB7752218 /* FlightPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */; };
+		F6ECD6038B2DC0C6D33FA3FA /* Pods_utair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079497B9EC83F208A00ACA3D /* Pods_utair.framework */; };
 		FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		003F343EC78C7DDD290335D3 /* Pods-utair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utair.release.xcconfig"; path = "Pods/Target Support Files/Pods-utair/Pods-utair.release.xcconfig"; sourceTree = "<group>"; };
+		079497B9EC83F208A00ACA3D /* Pods_utair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
 		08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
 		09F74328F59AEA4C520B0454 /* CityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewOutput.swift; sourceTree = "<group>"; };
@@ -161,6 +164,7 @@
 		4AE916501E8EF1750094D9C5 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		4AE916521E8EF1A10094D9C5 /* TransparentBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBorderedButton.swift; sourceTree = "<group>"; };
 		4E336DBD304D141C211FA75B /* CityInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractor.swift; sourceTree = "<group>"; };
+		4F122DC7D8401A72C6E14631 /* Pods-utair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utair.debug.xcconfig"; path = "Pods/Target Support Files/Pods-utair/Pods-utair.debug.xcconfig"; sourceTree = "<group>"; };
 		53FA9F02FD824B6D73B07E84 /* CityRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouterInput.swift; sourceTree = "<group>"; };
 		5C57A3963D8484B145ED03CA /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
 		631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6ECD6038B2DC0C6D33FA3FA /* Pods_utair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +349,8 @@
 				4AE915E51E8E8C2E0094D9C5 /* utair */,
 				4AE915E41E8E8C2E0094D9C5 /* Products */,
 				617B01A46119ECEDAA19EB03 /* Classes */,
+				B29939FDF342AB09199C6548 /* Pods */,
+				A8CC3BC8BA9B8D9514C79BCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -639,6 +646,14 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		A8CC3BC8BA9B8D9514C79BCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				079497B9EC83F208A00ACA3D /* Pods_utair.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A9299F1F3427D6F0657A2D6D /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -647,6 +662,15 @@
 				6C85DDCA82F26F17BFC878BF /* FlightInteractorOutput.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B29939FDF342AB09199C6548 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F122DC7D8401A72C6E14631 /* Pods-utair.debug.xcconfig */,
+				003F343EC78C7DDD290335D3 /* Pods-utair.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		B325F8B7199FB1F965C94737 /* Interactor */ = {
@@ -737,9 +761,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4AE915F51E8E8C2E0094D9C5 /* Build configuration list for PBXNativeTarget "utair" */;
 			buildPhases = (
+				B82816E3873CBDD723B7D1EA /* [CP] Check Pods Manifest.lock */,
 				4AE915DF1E8E8C2E0094D9C5 /* Sources */,
 				4AE915E01E8E8C2E0094D9C5 /* Frameworks */,
 				4AE915E11E8E8C2E0094D9C5 /* Resources */,
+				364477DC04FF881706287A23 /* [CP] Embed Pods Frameworks */,
+				F77A8A3932A10615261F7953 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -803,6 +830,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		364477DC04FF881706287A23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-utair/Pods-utair-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82816E3873CBDD723B7D1EA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F77A8A3932A10615261F7953 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-utair/Pods-utair-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4AE915DF1E8E8C2E0094D9C5 /* Sources */ = {
@@ -996,6 +1071,7 @@
 		};
 		4AE915F61E8E8C2E0094D9C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F122DC7D8401A72C6E14631 /* Pods-utair.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QYFE8U765U;
@@ -1009,6 +1085,7 @@
 		};
 		4AE915F71E8E8C2E0094D9C5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 003F343EC78C7DDD290335D3 /* Pods-utair.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = QYFE8U765U;
