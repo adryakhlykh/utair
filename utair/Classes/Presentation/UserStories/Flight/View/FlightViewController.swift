@@ -17,7 +17,10 @@ class FlightViewController: RouterViewController, FlightViewInput {
     
     // MARK: IBActions
     
-    @IBAction func findButtonAction(_ sender: Any) { }
+    @IBAction func findButtonAction(_ sender: Any) {
+        let flight = Flight()
+        output.didTapOnFindButton(withFlight: flight)
+    }
     
     @IBAction func unwindToFlight(segue: UIStoryboardSegue) { }
     

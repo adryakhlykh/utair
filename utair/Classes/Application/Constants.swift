@@ -12,6 +12,7 @@ typealias ModelDictionary = [String : Any]
 struct SegueID {
     static let city = "ShowCity"
     static let unwindToFlight = "unwindToFlight"
+    static let weather = "ShowWeather"
 }
 
 struct RequestURL {

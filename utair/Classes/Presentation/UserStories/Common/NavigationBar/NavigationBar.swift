@@ -17,7 +17,6 @@ class NavigationBar: UINavigationBar {
     var navigationBarTintColor: UIColor { return UIColor.white }
     var navigationBarElementTintColor: UIColor { return UIColor.white }
     var titleColor: UIColor { return UIColor.white }
-    var titleFont: UIFont { return UIFont.systemFont(ofSize: 17) }
     var titleImage: UIImage? { return nil }
     
     // MARK: Initialization and deinitialization
@@ -42,13 +41,12 @@ class NavigationBar: UINavigationBar {
         tintColor = navigationBarElementTintColor
         backgroundColor = navigationBarBackgroundColor
         barTintColor = navigationBarTintColor
-        isTranslucent = false
+        isTranslucent = true
         barStyle = .black
         shadowImage = UIImage()
         setBackgroundImage(UIImage(), for: .default)
         titleTextAttributes = [
             NSForegroundColorAttributeName : titleColor,
-            NSFontAttributeName : titleFont
         ]
         if let image = titleImage { topItem?.titleView = UIImageView(image: image) }
     }

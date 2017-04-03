@@ -52,6 +52,7 @@
                         <outlet property="findButton" destination="44a-eU-eZV" id="ySU-DD-165"/>
                         <outlet property="tableView" destination="ACe-bC-AZy" id="jKp-Bm-Pw8"/>
                         <segue destination="qoU-1Z-1Vm" kind="presentation" identifier="ShowCity" modalTransitionStyle="crossDissolve" id="0dM-3T-lPP"/>
+                        <segue destination="818-tm-6v5" kind="show" identifier="ShowWeather" id="HXB-m4-U7c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M96-mg-vwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -146,14 +147,143 @@
                 </customObject>
                 <exit id="ifC-hL-irj" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1896.8" y="-662.51874062968523"/>
+            <point key="canvasLocation" x="1934" y="-304"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="xej-Nf-6g3">
+            <objects>
+                <viewController id="818-tm-6v5" customClass="WeatherViewController" customModule="utair" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vjO-bp-MNP"/>
+                        <viewControllerLayoutGuide type="bottom" id="rnj-hT-1ro"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fc2-n0-KDn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="6Ts-24-AYb">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-bY-etS">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-ag-ltr">
+                                                <rect key="frame" x="60.5" y="12.5" width="68" height="20.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-Gx-lDt">
+                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6Aa-wa-eiz"/>
+                                                            <constraint firstAttribute="height" constant="20" id="CpV-nw-0vf"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-J2-cy9" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
+                                                        <rect key="frame" x="26" y="0.0" width="42" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="gqX-ag-ltr" firstAttribute="centerX" secondItem="FAR-bY-etS" secondAttribute="centerX" id="yFW-ui-7b8"/>
+                                            <constraint firstItem="gqX-ag-ltr" firstAttribute="centerY" secondItem="FAR-bY-etS" secondAttribute="centerY" id="zjz-pb-WhR"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="UXx-DV-epR" appends="YES" id="oug-Ul-pzd"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-8I-Ptp">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="44"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-a7-c3w">
+                                                <rect key="frame" x="63" y="12" width="62" height="20.5"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-d3-Hk0">
+                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="l25-U7-212"/>
+                                                            <constraint firstAttribute="width" constant="20" id="wDb-Ql-CHl"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGn-69-1P8" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="0.0" width="42" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="sVO-a7-c3w" firstAttribute="centerY" secondItem="8ae-8I-Ptp" secondAttribute="centerY" id="rTo-fK-e0V"/>
+                                            <constraint firstItem="sVO-a7-c3w" firstAttribute="centerX" secondItem="8ae-8I-Ptp" secondAttribute="centerX" id="wUZ-wr-djH"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="E43-Sd-GAP" appends="YES" id="58Z-IE-9Ey"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5BY-im-KBD"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-Uv-KtP">
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xvs-Uv-KtP" firstAttribute="leading" secondItem="fc2-n0-KDn" secondAttribute="leadingMargin" constant="-16" id="AVN-HV-3q1"/>
+                            <constraint firstItem="xvs-Uv-KtP" firstAttribute="top" secondItem="6Ts-24-AYb" secondAttribute="bottom" constant="8" id="LTB-v2-FuC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xvs-Uv-KtP" secondAttribute="trailing" constant="-16" id="R9H-YO-FkF"/>
+                            <constraint firstItem="6Ts-24-AYb" firstAttribute="leading" secondItem="fc2-n0-KDn" secondAttribute="leadingMargin" constant="-16" id="bks-5V-2Qk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ts-24-AYb" secondAttribute="trailing" constant="-16" id="dkV-qa-xEq"/>
+                            <constraint firstItem="6Ts-24-AYb" firstAttribute="top" secondItem="vjO-bp-MNP" secondAttribute="bottom" id="rEA-3i-ufP"/>
+                            <constraint firstItem="rnj-hT-1ro" firstAttribute="top" secondItem="xvs-Uv-KtP" secondAttribute="bottom" id="saQ-U0-uEZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backImageView" destination="nMV-d3-Hk0" id="ODw-Cp-gcn"/>
+                        <outlet property="backLabel" destination="aGn-69-1P8" id="2rM-jm-DZd"/>
+                        <outlet property="tableView" destination="xvs-Uv-KtP" id="cDB-DI-xiN"/>
+                        <outlet property="thereImageView" destination="ahq-Gx-lDt" id="H5v-ma-sJj"/>
+                        <outlet property="thereLabel" destination="Lge-J2-cy9" id="P4h-Qz-mTE"/>
+                        <outlet property="thereView" destination="FAR-bY-etS" id="zCb-gZ-Fid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pl4-NR-a0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="Ygj-oZ-bJy" customClass="WeatherModuleInitializer" customModule="utair" customModuleProvider="target">
+                    <connections>
+                        <outlet property="weatherViewController" destination="818-tm-6v5" id="NJz-x9-cvH"/>
+                    </connections>
+                </customObject>
+                <tapGestureRecognizer id="UXx-DV-epR">
+                    <connections>
+                        <action selector="tapOnThereView:" destination="818-tm-6v5" id="auk-Fy-CeD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="E43-Sd-GAP">
+                    <connections>
+                        <action selector="tapOnBackView:" destination="818-tm-6v5" id="F8V-ff-mj3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1933.5999999999999" y="-972.86356821589209"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mc3-42-B4e">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-9L-1EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFb-ql-LcT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AUz-px-csz" customClass="BlueNavigationBar" customModule="utair" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AUz-px-csz" customClass="TransparentNavigationBar" customModule="utair" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -162,7 +292,6 @@
                         <segue destination="Uzv-9G-Pgk" kind="relationship" relationship="rootViewController" id="PWn-RV-MYg"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-9L-1EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="84" y="-661.61919040479768"/>
         </scene>

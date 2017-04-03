@@ -19,4 +19,11 @@ class FlightRouter: FlightRouterInput {
             return moduleOutput
         }
     }
+    
+    func openModule(withFlight flight: Flight) {
+        viewController?.openModule(SegueID.weather) { moduleInput in
+            (moduleInput as? WeatherModuleInput)?.configureModule(withFlight: flight)
+            return nil
+        }
+    }
 }

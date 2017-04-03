@@ -31,6 +31,8 @@ class FlightPresenter: FlightModuleInput, FlightViewOutput, FlightInteractorOutp
         router.configureCityModule(withModuleOutput: self)
         cityModule.configureModule(withToTitle: title)
     }
+    
+    func didTapOnFindButton(withFlight flight: Flight) { router.openModule(withFlight: flight) }
 
     // MARK: FlightModuleInput
     

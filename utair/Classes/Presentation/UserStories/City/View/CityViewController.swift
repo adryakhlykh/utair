@@ -27,6 +27,7 @@ class CityViewController: RouterViewController, CityViewInput {
     override func viewDidLoad() {
         super.viewDidLoad()
         output.setupView()
+        view.backgroundColor = Color.blue
         NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextFieldTextDidChange, object: nil)
     }
     

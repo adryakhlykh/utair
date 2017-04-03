@@ -15,4 +15,10 @@ protocol FlightRouterInput {
     /// - Parameter moduleOutput: модуль выбора города информации
     
     func configureCityModule(withModuleOutput moduleOutput: CityModuleOutput)
+    
+    /// Метод для перехода в модуль Weather
+    ///
+    /// - Parameter flight: данные о полете
+    
+    func openModule(withFlight flight: Flight)
 }

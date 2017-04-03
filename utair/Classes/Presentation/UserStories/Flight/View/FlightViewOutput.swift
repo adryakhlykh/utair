@@ -23,4 +23,10 @@ protocol FlightViewOutput {
     /// - Parameter title: название города
     
     func didTapOnToView(withTitle title: String)
+    
+    /// Метод сообщает презентеру, что пользователь нажал на кнопку "Найти рейсы"
+    ///
+    /// - Parameter flight: данные о полете
+    
+    func didTapOnFindButton(withFlight flight: Flight)
 }
