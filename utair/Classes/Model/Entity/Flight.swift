@@ -7,5 +7,8 @@
 //
 
 struct Flight {
-    
+    let thereCity: City
+    let backCity: City
+    let thereDate: Int
+    let backDate: Int
 }

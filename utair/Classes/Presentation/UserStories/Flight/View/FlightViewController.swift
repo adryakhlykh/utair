@@ -18,7 +18,12 @@ class FlightViewController: RouterViewController, FlightViewInput {
     // MARK: IBActions
     
     @IBAction func findButtonAction(_ sender: Any) {
-        let flight = Flight()
+        guard let fromCity = adapter?.fromCity,
+            let toCity = adapter?.toCity,
+            let thereDate = thereDate, thereDate != 0,
+            let backDate = backDate, backDate != 0
+            else { return }
+        let flight = Flight(thereCity: fromCity, backCity: toCity, thereDate: thereDate, backDate: backDate)
         output.didTapOnFindButton(withFlight: flight)
     }
     
@@ -28,6 +33,8 @@ class FlightViewController: RouterViewController, FlightViewInput {
 	
     var output: FlightViewOutput!
     private var adapter: FlightAdapter?
+    private var thereDate: Int?
+    private var backDate: Int?
 
     // MARK: UIViewController
 
@@ -44,6 +51,8 @@ class FlightViewController: RouterViewController, FlightViewInput {
         let adapter = FlightAdapter(tableView: tableView)
         adapter.fromBlock = { [weak self] title in self?.output.didTapOnFromView(withTitle: title) }
         adapter.toBlock = { [weak self] title in self?.output.didTapOnToView(withTitle: title) }
+        adapter.thereDateBlock = { [weak self] date in self?.thereDate = date }
+        adapter.backDateBlock = { [weak self] date in self?.backDate = date }
         tableView.dataSource = adapter
         tableView.delegate = adapter
         self.adapter = adapter

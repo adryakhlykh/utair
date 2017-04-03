@@ -18,8 +18,11 @@ protocol WeatherViewInput: class {
     func showTitle(withFromCityTitle fromCityTitle: String, toCityTitle: String, imageName: String)
 
     /// Метод для настройки вью
-    /// 
-    /// - Parameter weather: объект Weather
-
-    func setupView(withWeather weather: Weather)
+    ///
+    /// - Parameters:
+    ///   - weather: словарь объектов Weather отсортированный по дням
+    ///   - thereTitle: заголовок "туда"
+    ///   - backTitle: заголовок "обратно"
+    
+    func setupView(withWeather weather: [SortedWeather], thereTitle: String, backTitle: String)
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CityMapperImpl: MapperImpl, CityMapper {
+class CityMapperImpl: CityMapper {
     func map(modelDictionary: ModelDictionary) throws -> City {
         let id = try modelDictionary.map(JSONKey.City.id) as Int
         let title = try modelDictionary.map(JSONKey.City.title) as String
@@ -19,5 +19,10 @@ class CityMapperImpl: MapperImpl, CityMapper {
     
     func mapAll(modelDictionaries: [ModelDictionary]) throws -> [City] {
         return try modelDictionaries.map { try map(modelDictionary: $0) }
+    }
+    
+    func mapResponse(_ modelDictionary: ModelDictionary) throws -> Response {
+        let data = try modelDictionary.map(JSONKey.results) as [ModelDictionary]
+        return Response(data: data)
     }
 }

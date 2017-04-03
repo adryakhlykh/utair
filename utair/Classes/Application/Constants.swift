@@ -17,20 +17,40 @@ struct SegueID {
 
 struct RequestURL {
     static let cities = "http://api.meetup.com/2/cities"
+    static let weather = "http://api.openweathermap.org/data/2.5/forecast?APPID=" + weatherAPIKey
 }
 
 struct JSONKey {
     static let results = "results"
+    static let list = "list"
+    
     struct City {
         static let id = "id"
         static let title = "city"
         static let latitude = "lat"
         static let longitude = "lon"
     }
+    
+    struct Weather {
+        static let main = "main"
+        static let dateAndTime = "dt"
+        static let temperature = "temp"
+    }
+}
+
+struct HTTPBody {
+    static let latitude = "lat"
+    static let longitude = "lon"
+    static let units = "units"
+}
+
+struct WeatherUnits {
+    static let metric = "metric"
 }
 
 enum Direction {
     case to
     case from
 }
+
 

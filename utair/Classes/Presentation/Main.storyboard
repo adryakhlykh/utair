@@ -76,7 +76,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-RA-X8t" customClass="BlueNavigationBar" customModule="utair" customModuleProvider="target">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-RA-X8t" customClass="TransparentNavigationBar" customModule="utair" customModuleProvider="target">
                                 <rect key="frame" x="-4" y="20" width="383" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="ulF-uR-9UD">
@@ -102,13 +102,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7u-aJ-EuK" customClass="TransparentBlueLabel" customModule="utair" customModuleProvider="target">
-                                <rect key="frame" x="65" y="103" width="294" height="21"/>
+                                <rect key="frame" x="65" y="103" width="294" height="13.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pUV-Al-t5t" customClass="TableView" customModule="utair" customModuleProvider="target">
-                                <rect key="frame" x="-4" y="134" width="383" height="533"/>
+                                <rect key="frame" x="-4" y="126.5" width="383" height="540.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -167,30 +167,28 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAR-bY-etS">
                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="44"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="gqX-ag-ltr">
-                                                <rect key="frame" x="60.5" y="12.5" width="68" height="20.5"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-Gx-lDt">
-                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="20" id="6Aa-wa-eiz"/>
-                                                            <constraint firstAttribute="height" constant="20" id="CpV-nw-0vf"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-J2-cy9" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
-                                                        <rect key="frame" x="26" y="0.0" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ahq-Gx-lDt">
+                                                <rect key="frame" x="48" y="12" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="SSA-cT-gey"/>
+                                                    <constraint firstAttribute="height" constant="20" id="VXk-6s-qZ2"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lge-J2-cy9" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
+                                                <rect key="frame" x="76" y="21.5" width="103.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstItem="gqX-ag-ltr" firstAttribute="centerX" secondItem="FAR-bY-etS" secondAttribute="centerX" id="yFW-ui-7b8"/>
-                                            <constraint firstItem="gqX-ag-ltr" firstAttribute="centerY" secondItem="FAR-bY-etS" secondAttribute="centerY" id="zjz-pb-WhR"/>
+                                            <constraint firstItem="ahq-Gx-lDt" firstAttribute="leading" secondItem="FAR-bY-etS" secondAttribute="leading" constant="48" id="0hA-Or-ww7"/>
+                                            <constraint firstItem="ahq-Gx-lDt" firstAttribute="centerY" secondItem="FAR-bY-etS" secondAttribute="centerY" id="Dga-K1-Fbx"/>
+                                            <constraint firstItem="Lge-J2-cy9" firstAttribute="leading" secondItem="ahq-Gx-lDt" secondAttribute="trailing" constant="8" id="HcP-Af-rfx"/>
+                                            <constraint firstItem="Lge-J2-cy9" firstAttribute="centerY" secondItem="ahq-Gx-lDt" secondAttribute="centerY" id="wJ9-Gx-Tib"/>
+                                            <constraint firstAttribute="trailing" secondItem="Lge-J2-cy9" secondAttribute="trailing" constant="8" id="ycJ-L2-qBz"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="UXx-DV-epR" appends="YES" id="oug-Ul-pzd"/>
@@ -199,30 +197,28 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ae-8I-Ptp">
                                         <rect key="frame" x="187.5" y="0.0" width="187.5" height="44"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="-16" translatesAutoresizingMaskIntoConstraints="NO" id="sVO-a7-c3w">
-                                                <rect key="frame" x="63" y="12" width="62" height="20.5"/>
-                                                <subviews>
-                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-d3-Hk0">
-                                                        <rect key="frame" x="0.0" y="0.5" width="20" height="20"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="20" id="l25-U7-212"/>
-                                                            <constraint firstAttribute="width" constant="20" id="wDb-Ql-CHl"/>
-                                                        </constraints>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGn-69-1P8" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
-                                                        <rect key="frame" x="20" y="0.0" width="42" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMV-d3-Hk0">
+                                                <rect key="frame" x="36" y="12" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="l25-U7-212"/>
+                                                    <constraint firstAttribute="width" constant="20" id="wDb-Ql-CHl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aGn-69-1P8" customClass="SegmentLabel" customModule="utair" customModuleProvider="target">
+                                                <rect key="frame" x="64" y="22" width="115.5" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                         <constraints>
-                                            <constraint firstItem="sVO-a7-c3w" firstAttribute="centerY" secondItem="8ae-8I-Ptp" secondAttribute="centerY" id="rTo-fK-e0V"/>
-                                            <constraint firstItem="sVO-a7-c3w" firstAttribute="centerX" secondItem="8ae-8I-Ptp" secondAttribute="centerX" id="wUZ-wr-djH"/>
+                                            <constraint firstAttribute="trailing" secondItem="aGn-69-1P8" secondAttribute="trailing" constant="8" id="53y-Gx-vGk"/>
+                                            <constraint firstItem="nMV-d3-Hk0" firstAttribute="centerY" secondItem="8ae-8I-Ptp" secondAttribute="centerY" id="N0t-Nj-pBb"/>
+                                            <constraint firstItem="nMV-d3-Hk0" firstAttribute="leading" secondItem="8ae-8I-Ptp" secondAttribute="leading" constant="36" id="ORp-Kp-5cv"/>
+                                            <constraint firstItem="aGn-69-1P8" firstAttribute="leading" secondItem="nMV-d3-Hk0" secondAttribute="trailing" constant="8" id="eGb-vp-lhN"/>
+                                            <constraint firstItem="aGn-69-1P8" firstAttribute="centerY" secondItem="nMV-d3-Hk0" secondAttribute="centerY" id="mh2-zk-eoE"/>
                                         </constraints>
                                         <connections>
                                             <outletCollection property="gestureRecognizers" destination="E43-Sd-GAP" appends="YES" id="58Z-IE-9Ey"/>
@@ -233,7 +229,7 @@
                                     <constraint firstAttribute="height" constant="44" id="5BY-im-KBD"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-Uv-KtP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-Uv-KtP" customClass="TableView" customModule="utair" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -283,7 +279,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-9L-1EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFb-ql-LcT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="AUz-px-csz" customClass="TransparentNavigationBar" customModule="utair" customModuleProvider="target">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AUz-px-csz" customClass="TransparentNavigationBar" customModule="utair" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

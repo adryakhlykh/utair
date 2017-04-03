@@ -20,8 +20,14 @@ typealias EmptyBlock = () -> ()
 /// Item clicked block with String parameter.
 typealias StringBlock = (String) -> ()
 
+/// Item clicked block with String parameter.
+typealias IntBlock = (Int) -> ()
+
 /// Item clicked block with City parameter.
 typealias CityBlock = (City) -> ()
 
 /// Operation result block with array of City parameter
 typealias CityResultBlock = (Result<[City]>) -> ()
+
+/// Operation result block with array of Weather parameter
+typealias WeatherResultBlock = (Result<[Weather]>) -> ()

@@ -29,12 +29,14 @@ class FlightCityTableViewCell: UITableViewCell {
         let toText = toTitleLabel.text
         toTitleLabel.text = fromTitleLabel.text
         fromTitleLabel.text = toText
+        changeBlock?()
     }
     
     // MARK: Properties
     
     var fromBlock: StringBlock?
     var toBlock: StringBlock?
+    var changeBlock: EmptyBlock?
     
     // MARK: UIKit
     

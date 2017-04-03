@@ -25,6 +25,8 @@ class FlightAdapter: NSObject {
     var toCity: City?
     var fromBlock: StringBlock?
     var toBlock: StringBlock?
+    var thereDateBlock: IntBlock?
+    var backDateBlock: IntBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -51,6 +53,11 @@ extension FlightAdapter: UITableViewDataSource {
                 if let city = toCity { cell.fill(withToCity: city) }
                 cell.fromBlock = { [weak self] text in self?.fromBlock?(text) }
                 cell.toBlock = { [weak self] text in self?.toBlock?(text) }
+                cell.changeBlock = { [weak self] in
+                    let city = self?.toCity
+                    self?.toCity = self?.fromCity
+                    self?.fromCity = city
+                }
                 return cell
             case 1:
                 let cell = tableView.dequeueReusableCell(withIdentifier: dateTableViewCell, for: indexPath) as! FlightDateTableViewCell
@@ -64,6 +71,8 @@ extension FlightAdapter: UITableViewDataSource {
                         tableView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
                     }
                 }
+                cell.thereDateBlock = { [weak self] date in self?.thereDateBlock?(date) }
+                cell.backDateBlock = { [weak self] date in self?.backDateBlock?(date) }
                 return cell
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: peopleTableViewCell, for: indexPath) as! FlightPeopleTableViewCell

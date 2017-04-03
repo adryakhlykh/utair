@@ -11,4 +11,10 @@ protocol WeatherViewOutput {
     /// Метод сообщает презентеру, что вью готова для работы
 
     func setupView()
+    
+    /// Метод сообщает презентеру что пользователь нажал на сегмент
+    ///
+    /// - Parameter direction: направление полета
+    
+    func didTapOnSegment(withDirection direction: Direction)
 }

@@ -40,6 +40,8 @@ class FlightDateTableViewCell: UITableViewCell {
     
     var keyboardShowBlock: KeyboardHeightBlock?
     var keyboardHideBlock: EmptyBlock?
+    var thereDateBlock: IntBlock?
+    var backDateBlock: IntBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -61,6 +63,7 @@ class FlightDateTableViewCell: UITableViewCell {
     func tapOnDoneButton() {
         if thereTextField.isEditing {
             thereTextField.text = dateFormatter.string(from: datePickerView.date)
+            thereDateBlock?(Int(datePickerView.date.timeIntervalSince1970))
         } else if backTextField.isEditing {
             if backTextField.isHidden && backLabel.isHidden && clearButton.isHidden {
                 backTextField.isHidden = false
@@ -69,6 +72,10 @@ class FlightDateTableViewCell: UITableViewCell {
                 backButton.isHidden = true
             }
             backTextField.text = dateFormatter.string(from: datePickerView.date)
+            if thereTextField.text == dateFormatter.string(from: Date()) {
+                thereDateBlock?(Int(Date().timeIntervalSince1970))
+            }
+            backDateBlock?(Int(datePickerView.date.timeIntervalSince1970))
         }
         endEditing(true)
     }

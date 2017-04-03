@@ -10,8 +10,11 @@ import Foundation
 
 protocol WeatherInteractorInput {
 
-	/// <#Description#>
+    /// Метод для загрузки погоды
     ///
-    /// - Parameter <#parameter>: <#parameter description#>
+    /// - Parameters:
+    ///   - latitude: широта
+    ///   - longitude: долгота
     
+    func getWeather(withLatitude latitude: Double, longitude: Double)
 }

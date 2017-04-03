@@ -36,6 +36,7 @@ class NavigationBarTitleView: UIView {
     // MARK: Private helpers
     
     private func initTitleView() {
+        leftNavigationTitleLabel.textAlignment = .right
         translatesAutoresizingMaskIntoConstraints = false
         navigationTitleImageView.contentMode = .scaleAspectFit
         let stackView = UIStackView(frame: .zero)

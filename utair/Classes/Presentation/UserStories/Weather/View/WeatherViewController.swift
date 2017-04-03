@@ -26,6 +26,7 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         backImageView.tintColor = Color.gray
         thereLabel.textColor = Color.blue
         thereImageView.tintColor = Color.blue
+        output.didTapOnSegment(withDirection: .to)
     }
    
     @IBAction func tapOnBackView(_ sender: Any) {
@@ -33,12 +34,14 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         thereImageView.tintColor = Color.gray
         backLabel.textColor = Color.blue
         backImageView.tintColor = Color.blue
+        output.didTapOnSegment(withDirection: .from)
     }
     
 	// MARK: Properties
 	
     var output: WeatherViewOutput!
     var titleView: NavigationBarTitleView?
+    private var adapter: WeatherAdapter?
 
     // MARK: UIViewController
 
@@ -53,6 +56,11 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         navigationController?.navigationBar.barStyle = .default
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationItem.titleView?.isHidden = false
+    }
+    
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.barStyle = .black
@@ -65,6 +73,7 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         titleView?.leftNavigationTitleLabel.text = fromCityTitle
         titleView?.rightNavigationTitleLabel.text = toCityTitle
         navigationItem.titleView = titleView
+        navigationItem.titleView?.isHidden = true
         if let navigationView = navigationItem.titleView, let titleView = titleView {
             NSLayoutConstraint.activate([
                 titleView.topAnchor.constraint(equalTo: navigationView.topAnchor),
@@ -77,8 +86,14 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         }
     }
     
-    func setupView(withWeather weather: Weather) {
-        
+    func setupView(withWeather weather: [SortedWeather], thereTitle: String, backTitle: String) {
+        thereLabel.text = thereTitle
+        backLabel.text = backTitle
+        let adapter = WeatherAdapter(tableView: tableView, weather: weather)
+        tableView.dataSource = adapter
+        tableView.delegate = adapter
+        self.adapter = adapter
+        tableView.reloadData()
     }
     
     // MARK: Private helpers
@@ -96,8 +111,6 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
             backImageView.tintColor = Color.gray
         }
         thereImageView.image = thereImage
-        thereImageView.contentMode = .scaleAspectFit
-        backImageView.contentMode = .scaleAspectFit
         thereLabel.textColor = Color.blue
         backLabel.textColor = Color.gray
     }

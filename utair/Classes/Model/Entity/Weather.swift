@@ -7,5 +7,6 @@
 //
 
 struct Weather {
-    
+    let dateAndTime: Int
+    let temperature: Double
 }

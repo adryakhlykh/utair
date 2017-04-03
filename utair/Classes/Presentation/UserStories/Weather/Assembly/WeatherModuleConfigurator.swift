@@ -32,6 +32,7 @@ class WeatherModuleConfigurator {
         presenter.interactor = interactor
 
         interactor.output = presenter
+        interactor.weatherService = WeatherServiceAssemblyImpl.service()
 
         viewController.output = presenter
         viewController.moduleInput = presenter

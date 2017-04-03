@@ -10,8 +10,9 @@ import Foundation
 
 protocol WeatherInteractorOutput: class {
 	
-	/// <#Description#>
+    /// Метод передает презентеру погоду
     ///
-    /// - Parameter <#parameter>: <#parameter description#>
+    /// - Parameter weather: массив объектов погоды
     
+    func didGetWeather(withWeather weather: [Weather])
 }
