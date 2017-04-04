@@ -19,3 +19,15 @@
 "FLIGT.BUTTON.FIND" = "Найти рейсы";
 "FLIGT.TOOLBAR.BUTTON.DONE" = "Готово";
 "FLIGT.TOOLBAR.BUTTON.CANCEL" = "Отмена";
+
+//WEATHER
+"WEATHER.DEGREE" = "℃";
+"WEATHER.TIME" = "ч";
+
+//ERROR
+"ERROR.CITY.FROM" = "Не выбран город откуда вы летите";
+"ERROR.CITY.TO" = "Не выбран город куда вы летите";
+"ERROR.DATE.THERE" = "Не выбрана дата полета";
+"ERROR.DATE.BACK" = "Не выбрана дата обратного полета";
+"ERROR.PASSANGERS" = "Пассажиров не должно быть больше 9";
+"ERROR.BABY" = "Младенцев не должно быть больше, чем взрослых";

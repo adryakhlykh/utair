@@ -9,9 +9,14 @@
 import Foundation
 
 class WeatherNetworkDataProviderAssemblyImpl: WeatherNetworkDataProviderAssembly {
+    
+    // MARK: WeatherNetworkDataProviderAssembly
+    
     static func networkDataProvider() -> WeatherDataProvider {
         return WeatherNetworkDataProvider(transport: transport(), deserializer: deserializer(), mapper: mapper())
     }
+    
+    // MARK: Private helpers
     
     private static func transport() -> Transport {
         return TransportImpl()

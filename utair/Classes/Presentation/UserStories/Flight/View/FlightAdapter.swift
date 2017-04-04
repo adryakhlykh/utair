@@ -27,6 +27,7 @@ class FlightAdapter: NSObject {
     var toBlock: StringBlock?
     var thereDateBlock: IntBlock?
     var backDateBlock: IntBlock?
+    var errorBlock: ErrorBlock?
     
     // MARK: Initialization and deinitialization
     
@@ -76,6 +77,7 @@ extension FlightAdapter: UITableViewDataSource {
                 return cell
             case 2:
                 let cell = tableView.dequeueReusableCell(withIdentifier: peopleTableViewCell, for: indexPath) as! FlightPeopleTableViewCell
+                cell.errorBlock = { [weak self] error in self?.errorBlock?(error) }
                 return cell
             default:
                 return UITableViewCell()

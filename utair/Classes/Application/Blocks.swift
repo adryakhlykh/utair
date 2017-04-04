@@ -17,6 +17,9 @@ typealias KeyboardHeightBlock = (CGFloat) -> ()
 /// Empty block without parameter.
 typealias EmptyBlock = () -> ()
 
+/// Error block with ErrorType parameter.
+typealias ErrorBlock = (ErrorType) -> ()
+
 /// Item clicked block with String parameter.
 typealias StringBlock = (String) -> ()
 
@@ -25,6 +28,9 @@ typealias IntBlock = (Int) -> ()
 
 /// Item clicked block with City parameter.
 typealias CityBlock = (City) -> ()
+
+/// Operation result block with Data parameter
+typealias DataResultBlock = (Result<Data>) -> ()
 
 /// Operation result block with array of City parameter
 typealias CityResultBlock = (Result<[City]>) -> ()

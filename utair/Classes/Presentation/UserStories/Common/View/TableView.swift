@@ -11,8 +11,9 @@ import UIKit
 class TableView: UITableView {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        let estimateRowHeight = CGFloat(200)
         separatorStyle = .none
         rowHeight = UITableViewAutomaticDimension
-        estimatedRowHeight = 200
+        estimatedRowHeight = estimateRowHeight
     }
 }

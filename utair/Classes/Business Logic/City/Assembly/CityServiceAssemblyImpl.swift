@@ -10,9 +10,13 @@ import Foundation
 
 class CityServiceAssemblyImpl: CityServiceAssembly {
     
+    // MARK: CityServiceAssembly
+    
     static func service() -> CityService {
         return CityServiceImpl(networkDataProvider: networkDataProvider())
     }
+    
+    // MARK: Private helpers
     
     private static func networkDataProvider() -> CityDataProvider {
         return CityNetworkDataProviderAssemblyImpl.networkDataProvider()

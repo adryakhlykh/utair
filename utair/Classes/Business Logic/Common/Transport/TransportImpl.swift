@@ -11,18 +11,25 @@ import Alamofire
 
 class TransportImpl: Transport {
     
+    // MARK: Constants
+    
     let manager: Alamofire.SessionManager
+    
+    // MARK: Initialization and deinitialization
     
     init() {
         let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForResource = 250
+        let timeout = 10.0
+        configuration.timeoutIntervalForResource = timeout
         manager = Alamofire.SessionManager(
             configuration: configuration,
             serverTrustPolicyManager: nil
         )
     }
     
-    func request(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> ()) {
+    // MARK: Transport
+    
+    func request(_ request: URLRequest, completionBlock: @escaping DataResultBlock) {
         manager.request(request).responseData { response in
             switch response.result {
                 case .success(let value): completionBlock(Result.value(value))

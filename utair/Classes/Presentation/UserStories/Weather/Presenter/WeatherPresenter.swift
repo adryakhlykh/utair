@@ -14,7 +14,6 @@ class WeatherPresenter: WeatherModuleInput, WeatherViewOutput, WeatherInteractor
     
     weak var view: WeatherViewInput!
     var interactor: WeatherInteractorInput!
-    var router: WeatherRouterInput!
     private var flight: Flight?
 
     // MARK: WeatherViewOutput
@@ -22,12 +21,15 @@ class WeatherPresenter: WeatherModuleInput, WeatherViewOutput, WeatherInteractor
     func setupView() {
         if let flight = flight {
             let city = flight.thereCity
+            view.startRequest()
             interactor.getWeather(withLatitude: city.latitude, longitude: city.longitude)
             view.showTitle(withFromCityTitle: flight.thereCity.title, toCityTitle: flight.backCity.title, imageName: "icPlaneDirection")
+            view.setupView(withThereTitle: "FLIGHT.DATE.THERE".localized, backTitle: "FLIGHT.DATE.BACK".localized, imageName: "icPlaneDirection")
         }
     }
     
     func didTapOnSegment(withDirection direction: Direction) {
+        view.startRequest()
         if let flight = flight {
             switch direction {
                 case .from:
@@ -46,7 +48,17 @@ class WeatherPresenter: WeatherModuleInput, WeatherViewOutput, WeatherInteractor
     
     func didGetWeather(withWeather weather: [Weather]) {
         let sortedWeather = sortByDate(withWeather: weather)
-        view.setupView(withWeather: sortedWeather, thereTitle: "FLIGHT.DATE.THERE".localized, backTitle: "FLIGHT.DATE.BACK".localized)
+        view.endRequest()
+        view.setupView(withWeather: sortedWeather)
+    }
+    
+    func didGetError(withError error: Error) {
+        view.endRequest()
+        if error is Errors {
+            print(error)
+        } else {
+            view.showMessageView(withMessage: error.localizedDescription)
+        }
     }
     
     // MARK: Private helpers

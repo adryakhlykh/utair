@@ -22,7 +22,16 @@ class FlightViewController: RouterViewController, FlightViewInput {
             let toCity = adapter?.toCity,
             let thereDate = thereDate, thereDate != 0,
             let backDate = backDate, backDate != 0
-            else { return }
+            else {
+                if adapter?.fromCity == nil {
+                    output.didGetError(withErrorType: .emptyFromCity)
+                } else if adapter?.toCity == nil {
+                    output.didGetError(withErrorType: .emptyToCity)
+                } else {
+                    output.didGetError(withErrorType: .emptyBackDate)
+                }
+                return
+            }
         let flight = Flight(thereCity: fromCity, backCity: toCity, thereDate: thereDate, backDate: backDate)
         output.didTapOnFindButton(withFlight: flight)
     }
@@ -45,14 +54,16 @@ class FlightViewController: RouterViewController, FlightViewInput {
 
     // MARK: FlightViewInput
 
-    func setupView() {
-        findButton.setTitle("FLIGT.BUTTON.FIND".localized, for: .normal)
+    func setupView(withFindButtonTitle title: String) {
+        findButton.setTitle(title, for: .normal)
         tableView.backgroundColor = Color.blue
+        view.backgroundColor = Color.blue
         let adapter = FlightAdapter(tableView: tableView)
         adapter.fromBlock = { [weak self] title in self?.output.didTapOnFromView(withTitle: title) }
         adapter.toBlock = { [weak self] title in self?.output.didTapOnToView(withTitle: title) }
         adapter.thereDateBlock = { [weak self] date in self?.thereDate = date }
         adapter.backDateBlock = { [weak self] date in self?.backDate = date }
+        adapter.errorBlock = { [weak self] error in self?.output.didGetError(withErrorType: error) }
         tableView.dataSource = adapter
         tableView.delegate = adapter
         self.adapter = adapter

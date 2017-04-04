@@ -15,9 +15,9 @@ class TransparentBorderedButton: Button {
     override var cornerRadius: CGFloat { return 4 }
     override var borderColor: UIColor? { return .white }
     override var image: UIImage? { return UIImage(named: "icnGlobalPlusGiant") }
+    override var imageTintColor: UIColor? { return .white }
+    override var imageContentMode: UIViewContentMode { return .scaleAspectFit }
     override var imageInsets: UIEdgeInsets {
         return UIEdgeInsets(top: 14, left: 0, bottom: 14, right: 16)
     }
-    override var imageTintColor: UIColor? { return .white }
-    override var imageContentMode: UIViewContentMode { return .scaleAspectFit }
 }

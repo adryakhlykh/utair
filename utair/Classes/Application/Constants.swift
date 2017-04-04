@@ -53,4 +53,10 @@ enum Direction {
     case from
 }
 
-
+enum ErrorType {
+    case emptyFromCity
+    case emptyToCity
+    case emptyBackDate
+    case babyGreaterThanAdult
+    case passangersGreaterThan9
+}

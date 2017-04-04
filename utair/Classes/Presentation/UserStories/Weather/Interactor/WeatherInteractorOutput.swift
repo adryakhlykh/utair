@@ -15,4 +15,10 @@ protocol WeatherInteractorOutput: class {
     /// - Parameter weather: массив объектов погоды
     
     func didGetWeather(withWeather weather: [Weather])
+    
+    /// Метод передает презентеру ошибку
+    ///
+    /// - Parameter error: объект ошибки
+    
+    func didGetError(withError error: Error)
 }

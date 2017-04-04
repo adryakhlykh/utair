@@ -6,7 +6,7 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol CityViewInput: class {
+protocol CityViewInput: class, RequestViewInput, MessageViewInput {
 
     /// Метод для настройки тейбл вью
     /// 

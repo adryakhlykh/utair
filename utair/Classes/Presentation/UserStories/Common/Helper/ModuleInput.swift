@@ -15,6 +15,8 @@ protocol ModuleInput: class {
     func setModuleOutput(moduleOutput: ModuleOutput)
 }
 
+// MARK: ModuleOutput
+
 extension ModuleInput {
     func setModuleOutput(moduleOutput: ModuleOutput) { }
 }

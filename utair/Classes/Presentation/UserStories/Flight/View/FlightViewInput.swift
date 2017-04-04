@@ -6,11 +6,13 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol FlightViewInput: class {
+protocol FlightViewInput: class, MessageViewInput {
 
     /// Метод для настройки вью
-
-    func setupView()
+    ///
+    /// - Parameter title: тайтл кнопки
+    
+    func setupView(withFindButtonTitle title: String)
     
     /// Метод для настройки вью
     ///

@@ -9,9 +9,14 @@
 import Foundation
 
 class CityNetworkDataProviderAssemblyImpl: CityNetworkDataProviderAssembly {
+    
+    // MARK: CityNetworkDataProviderAssembly
+    
     static func networkDataProvider() -> CityDataProvider {
         return CityNetworkDataProvider(transport: transport(), deserializer: deserializer(), mapper: mapper())
     }
+    
+    // MARK: Private helpers
     
     private static func transport() -> Transport {
         return TransportImpl()

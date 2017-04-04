@@ -29,4 +29,10 @@ protocol FlightViewOutput {
     /// - Parameter flight: данные о полете
     
     func didTapOnFindButton(withFlight flight: Flight)
+    
+    /// Метод сообщает презентеру об ошибке
+    ///
+    /// - Parameter type: тип ошибки
+    
+    func didGetError(withErrorType type: ErrorType)
 }

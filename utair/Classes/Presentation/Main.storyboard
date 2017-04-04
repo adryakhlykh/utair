@@ -12,7 +12,7 @@
         <!--Flight View Controller-->
         <scene sceneID="i4h-if-rl7">
             <objects>
-                <viewController storyboardIdentifier="FlightViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uzv-9G-Pgk" customClass="FlightViewController" customModule="utair" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FlightViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Uzv-9G-Pgk" customClass="FlightViewController" customModule="utair" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZJ-GZ-Sf6"/>
                         <viewControllerLayoutGuide type="bottom" id="cQ9-mW-rNg"/>
@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ACe-bC-AZy" customClass="TableView" customModule="utair" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44a-eU-eZV" customClass="FindButton" customModule="utair" customModuleProvider="target">
@@ -42,9 +42,9 @@
                             <constraint firstItem="ACe-bC-AZy" firstAttribute="bottom" secondItem="cQ9-mW-rNg" secondAttribute="top" id="HKa-4A-3bn"/>
                             <constraint firstAttribute="trailing" secondItem="ACe-bC-AZy" secondAttribute="trailing" id="OtH-U4-pbp"/>
                             <constraint firstItem="cQ9-mW-rNg" firstAttribute="top" secondItem="44a-eU-eZV" secondAttribute="bottom" constant="16" id="UVX-Zb-hCD"/>
-                            <constraint firstItem="ACe-bC-AZy" firstAttribute="top" secondItem="okg-wz-aJw" secondAttribute="top" id="X3M-YN-dOP"/>
                             <constraint firstItem="44a-eU-eZV" firstAttribute="leading" secondItem="okg-wz-aJw" secondAttribute="leadingMargin" constant="12" id="XP9-KZ-3A8"/>
                             <constraint firstItem="ACe-bC-AZy" firstAttribute="leading" secondItem="okg-wz-aJw" secondAttribute="leading" id="Xdi-Vi-sUg"/>
+                            <constraint firstItem="ACe-bC-AZy" firstAttribute="top" secondItem="bZJ-GZ-Sf6" secondAttribute="bottom" id="yEn-y8-cyT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BiD-EM-NTt"/>
@@ -227,9 +227,10 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="5BY-im-KBD"/>
+                                    <constraint firstItem="FAR-bY-etS" firstAttribute="width" secondItem="8ae-8I-Ptp" secondAttribute="width" id="EhQ-rI-OuY"/>
                                 </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-Uv-KtP" customClass="TableView" customModule="utair" customModuleProvider="target">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xvs-Uv-KtP" customClass="TableView" customModule="utair" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
@@ -245,9 +246,53 @@
                             <constraint firstItem="rnj-hT-1ro" firstAttribute="top" secondItem="xvs-Uv-KtP" secondAttribute="bottom" id="saQ-U0-uEZ"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="GKz-JW-oHc">
+                        <nil key="title"/>
+                        <view key="titleView" contentMode="scaleToFill" id="YcA-y3-xZA">
+                            <rect key="frame" x="112.5" y="5.5" width="150" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40p-DN-exj" customClass="NavigationBarTitleLabel" customModule="utair" customModuleProvider="target">
+                                    <rect key="frame" x="8" y="0.0" width="49" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SQ5-xR-Sbx">
+                                    <rect key="frame" x="65" y="6.5" width="20" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="20" id="CcC-Px-5gj"/>
+                                        <constraint firstAttribute="height" constant="20" id="ku9-re-oXa"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hQM-19-OhP" customClass="NavigationBarTitleLabel" customModule="utair" customModuleProvider="target">
+                                    <rect key="frame" x="93" y="0.0" width="49" height="33"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="hQM-19-OhP" secondAttribute="trailing" constant="8" id="4aD-dD-Mom"/>
+                                <constraint firstAttribute="bottom" secondItem="hQM-19-OhP" secondAttribute="bottom" id="Aih-IV-muD"/>
+                                <constraint firstItem="40p-DN-exj" firstAttribute="leading" secondItem="YcA-y3-xZA" secondAttribute="leading" constant="8" id="GLc-Oz-jb0"/>
+                                <constraint firstAttribute="bottom" secondItem="40p-DN-exj" secondAttribute="bottom" id="Jpv-Cf-1bD"/>
+                                <constraint firstItem="SQ5-xR-Sbx" firstAttribute="centerY" secondItem="YcA-y3-xZA" secondAttribute="centerY" id="bag-a8-Znn"/>
+                                <constraint firstItem="hQM-19-OhP" firstAttribute="leading" secondItem="SQ5-xR-Sbx" secondAttribute="trailing" constant="8" id="hwc-Oh-8gk"/>
+                                <constraint firstItem="40p-DN-exj" firstAttribute="width" secondItem="hQM-19-OhP" secondAttribute="width" id="khP-Rs-Rif"/>
+                                <constraint firstItem="SQ5-xR-Sbx" firstAttribute="leading" secondItem="40p-DN-exj" secondAttribute="trailing" constant="8" id="rfK-fk-Uui"/>
+                                <constraint firstItem="40p-DN-exj" firstAttribute="top" secondItem="YcA-y3-xZA" secondAttribute="top" id="x7X-aX-ZY7"/>
+                                <constraint firstItem="hQM-19-OhP" firstAttribute="top" secondItem="YcA-y3-xZA" secondAttribute="top" id="z68-H5-wT2"/>
+                            </constraints>
+                        </view>
+                    </navigationItem>
                     <connections>
                         <outlet property="backImageView" destination="nMV-d3-Hk0" id="ODw-Cp-gcn"/>
                         <outlet property="backLabel" destination="aGn-69-1P8" id="2rM-jm-DZd"/>
+                        <outlet property="leftNavigationBarLabel" destination="40p-DN-exj" id="dcD-r5-LoU"/>
+                        <outlet property="navigationBarImageView" destination="SQ5-xR-Sbx" id="40q-BE-jTA"/>
+                        <outlet property="rightNavigationBarLabel" destination="hQM-19-OhP" id="3yi-IB-2JX"/>
                         <outlet property="tableView" destination="xvs-Uv-KtP" id="cDB-DI-xiN"/>
                         <outlet property="thereImageView" destination="ahq-Gx-lDt" id="H5v-ma-sJj"/>
                         <outlet property="thereLabel" destination="Lge-J2-cy9" id="P4h-Qz-mTE"/>
@@ -276,7 +321,6 @@
         <!--Navigation Controller-->
         <scene sceneID="mc3-42-B4e">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-9L-1EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gFb-ql-LcT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AUz-px-csz" customClass="TransparentNavigationBar" customModule="utair" customModuleProvider="target">
@@ -288,6 +332,7 @@
                         <segue destination="Uzv-9G-Pgk" kind="relationship" relationship="rootViewController" id="PWn-RV-MYg"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TCq-9L-1EO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="84" y="-661.61919040479768"/>
         </scene>

@@ -23,17 +23,12 @@ class FlightModuleConfigurator {
     private func configure(viewController: FlightViewController) {
         let router = FlightRouter()
         let presenter = FlightPresenter()
-        let interactor = FlightInteractor()
 
         router.viewController = viewController
 
         presenter.view = viewController
         presenter.router = router
-        presenter.interactor = interactor
-
-        interactor.output = presenter
 
         viewController.output = presenter
-        viewController.moduleInput = presenter
     }
 }

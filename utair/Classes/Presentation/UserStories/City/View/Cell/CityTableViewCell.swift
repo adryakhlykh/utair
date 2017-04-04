@@ -19,7 +19,7 @@ class CityTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupStyle()
+        backgroundColor = Color.blue
     }
     
     // MARK: Internal helpers
@@ -27,11 +27,5 @@ class CityTableViewCell: UITableViewCell {
     func fill(withCity city: City) {
         titleLabel.text = city.title
         subtitleLabel.text = "FLIGHT.CITY.ALL_AIRPORTS".localized
-    }
-    
-    // MARK: Private helpers
-    
-    private func setupStyle() {
-        backgroundColor = Color.blue
     }
 }

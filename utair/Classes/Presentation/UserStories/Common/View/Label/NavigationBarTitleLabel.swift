@@ -12,4 +12,6 @@ import UIKit
 class NavigationBarTitleLabel: Label {
     override var labelFont: UIFont { return Font.bold17 }
     override var labelColor: UIColor { return Color.blue }
+    override var labelLines: Int { return 1 }
+    override var labelLineBreaks: NSLineBreakMode { return NSLineBreakMode.byTruncatingTail }
 }

@@ -21,6 +21,7 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
     func setupView() {
         moduleOutput.didLoadCityModuleInput(withCityModule: self)
         interactor.getCities()
+        view.startRequest()
     }
     
     func didTapOnCity(withCity city: City) {
@@ -67,5 +68,17 @@ class CityPresenter: CityModuleInput, CityViewOutput, CityInteractorOutput {
     
     // MARK: CityInteractorOutput 
     
-    func didGetCities(withCities cities: [City]) { view.setupView(withCities: cities) }
+    func didGetCities(withCities cities: [City]) {
+        view.endRequest()
+        view.setupView(withCities: cities)
+    }
+    
+    func didGetError(withError error: Error) {
+        view.endRequest()
+        if error is Errors {
+            print(error)
+        } else {
+            view.showMessageView(withMessage: error.localizedDescription)
+        }
+    }
 }

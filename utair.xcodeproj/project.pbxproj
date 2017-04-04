@@ -15,16 +15,13 @@
 		0F69DBD0FAA48E2127522197 /* CityNetworkDataProviderAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A7F831138BC425CB5395DC /* CityNetworkDataProviderAssemblyImpl.swift */; };
 		0F80524A8030606562BDDA76 /* CityMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E03284A30C7802D79AE216 /* CityMapper.swift */; };
 		17B119023DFD34E8978C2EB4 /* CityModuleInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE29B91884347E532ECDF54 /* CityModuleInitializer.swift */; };
-		1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */; };
 		288F50E7243D1BCA5EF640D2 /* CityInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A47080E9752968B7DB03789 /* CityInteractorOutput.swift */; };
 		28D5BE6D99A33F21B3988539 /* CityNetworkDataProviderAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F41761C624D4B5DD807B2 /* CityNetworkDataProviderAssembly.swift */; };
 		2C1703E9C4C58C60D8C56312 /* FlightRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */; };
 		2C5F2D3809787A4549FA0AB9 /* CityServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623A15F95C7EB965BD2879AB /* CityServiceImpl.swift */; };
 		2E51E55C5BFB0D577FA00A40 /* WeatherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E95256A34642CD58A963A73 /* WeatherPresenter.swift */; };
-		31F679CA43FFFEDB0C3F7EA2 /* WeatherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BA6AA92180958A6958C178 /* WeatherRouter.swift */; };
 		3A5C5E7403004FFEC28A28A7 /* WeatherServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06222533CAE7F108188EA67E /* WeatherServiceImpl.swift */; };
 		3CD15039E1D9B686B300B116 /* CityRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80BD286E4D2ECC32B90EAB /* CityRouter.swift */; };
-		422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */; };
 		478DB7403EAAC970B9DA9CB4 /* WeatherViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC397D5BF2767DE96C459355 /* WeatherViewOutput.swift */; };
 		4A0300281E9027C9001B2014 /* CityModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300271E9027C9001B2014 /* CityModuleOutput.swift */; };
 		4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03002B1E9030E7001B2014 /* CityTextField.swift */; };
@@ -47,6 +44,8 @@
 		4A03005A1E9053A8001B2014 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0300591E9053A8001B2014 /* Result.swift */; };
 		4A03FFD41E8FD591001B2014 /* FlightPeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */; };
 		4A03FFD51E8FD591001B2014 /* FlightPeopleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */; };
+		4A0D082E1E93C4AD00AA6B16 /* RequestViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D082D1E93C4AD00AA6B16 /* RequestViewInput.swift */; };
+		4A0D08321E93D09300AA6B16 /* MessageViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0D08311E93D09300AA6B16 /* MessageViewInput.swift */; };
 		4A1400A61E92561700ECB2B0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400A51E92561700ECB2B0 /* Weather.swift */; };
 		4A1400A81E9256B600ECB2B0 /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400A71E9256B600ECB2B0 /* Flight.swift */; };
 		4A1400D01E927C7100ECB2B0 /* NavigationBarTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400CF1E927C7100ECB2B0 /* NavigationBarTitleLabel.swift */; };
@@ -55,7 +54,6 @@
 		4A1400DE1E928A2600ECB2B0 /* MinusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400D71E928A2600ECB2B0 /* MinusButton.swift */; };
 		4A1400DF1E928A2600ECB2B0 /* PlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400D81E928A2600ECB2B0 /* PlusButton.swift */; };
 		4A1400E01E928A2600ECB2B0 /* TransparentBorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400D91E928A2600ECB2B0 /* TransparentBorderedButton.swift */; };
-		4A1400EA1E92C27C00ECB2B0 /* NavigationBarTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400E91E92C27C00ECB2B0 /* NavigationBarTitleView.swift */; };
 		4A1400EE1E92CA1800ECB2B0 /* SegmentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400ED1E92CA1800ECB2B0 /* SegmentLabel.swift */; };
 		4A1400F21E92ED6000ECB2B0 /* WeatherAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400F11E92ED6000ECB2B0 /* WeatherAdapter.swift */; };
 		4A1400F61E92EE0C00ECB2B0 /* WeatherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A1400F41E92EE0C00ECB2B0 /* WeatherTableViewCell.swift */; };
@@ -98,7 +96,6 @@
 		5C20DDD557E9FFD6E5C17C7F /* WeatherModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE46913FE08B067362AF9D9F /* WeatherModuleInput.swift */; };
 		6C5E94A46C4FD46DACDD918E /* WeatherMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C822631AB9ED9C1C49DD56 /* WeatherMapper.swift */; };
 		70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */; };
-		72EB6B0F42DB3F16B5D345DF /* WeatherRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91D317FC340C9CA8ACDA5B9 /* WeatherRouterInput.swift */; };
 		76658DA2721469AB4D13C185 /* CityViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF231E86C927CFCC43503A /* CityViewInput.swift */; };
 		76791414B804701D00433C47 /* CityModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 803B11A31B027800FCCAC6D7 /* CityModuleInput.swift */; };
 		7B0A6D8955EA68719344E6A0 /* FlightRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E20DBC390BF58807E6C7DA /* FlightRouter.swift */; };
@@ -112,7 +109,6 @@
 		9E0A3062858EABEEADAC73E0 /* CityInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E336DBD304D141C211FA75B /* CityInteractor.swift */; };
 		A27DBADCCCD8691A3DF33C76 /* WeatherModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40477795380149D134FB1D8 /* WeatherModuleConfigurator.swift */; };
 		ABE99320E63C86E8E8FE9DD3 /* WeatherViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6C68E08BEF325C6BD1F3BC /* WeatherViewInput.swift */; };
-		B4141DCE9470B251451B388B /* FlightInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */; };
 		B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB03E00455C84E8C92388A1 /* FlightViewController.swift */; };
 		BCCB60F3F54220920B850361 /* CityMapperImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF128307EB334AF2275468D6 /* CityMapperImpl.swift */; };
 		C28D9B70D72C7BA087E9922C /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C23B56740683A372C407CE6D /* WeatherViewController.swift */; };
@@ -131,14 +127,12 @@
 		F24B8535409A374968B72B53 /* WeatherServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = E361C5052D79B0CD483F09C6 /* WeatherServiceAssembly.swift */; };
 		F6ECD6038B2DC0C6D33FA3FA /* Pods_utair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079497B9EC83F208A00ACA3D /* Pods_utair.framework */; };
 		FD6771B4D806EDD7F13F4BFA /* CityDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759C48A601A04EBEEA2007B5 /* CityDataProvider.swift */; };
-		FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003F343EC78C7DDD290335D3 /* Pods-utair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-utair.release.xcconfig"; path = "Pods/Target Support Files/Pods-utair/Pods-utair.release.xcconfig"; sourceTree = "<group>"; };
 		06222533CAE7F108188EA67E /* WeatherServiceImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherServiceImpl.swift; sourceTree = "<group>"; };
 		079497B9EC83F208A00ACA3D /* Pods_utair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_utair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorOutput.swift; sourceTree = "<group>"; };
 		08D1CEFE64A001B4CD9CFE46 /* FlightModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleConfigurator.swift; sourceTree = "<group>"; };
 		09F74328F59AEA4C520B0454 /* CityViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewOutput.swift; sourceTree = "<group>"; };
 		0CB03E00455C84E8C92388A1 /* FlightViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewController.swift; sourceTree = "<group>"; };
@@ -149,7 +143,6 @@
 		238B3E709163BD39DA0B880E /* WeatherServiceAssemblyImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherServiceAssemblyImpl.swift; sourceTree = "<group>"; };
 		24D5F729F0391BEE5309180E /* CityInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityInteractorInput.swift; sourceTree = "<group>"; };
 		287A26DE2ACB2A68A0E2ABA5 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
-		2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInput.swift; sourceTree = "<group>"; };
 		30E20DBC390BF58807E6C7DA /* FlightRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouter.swift; sourceTree = "<group>"; };
 		32A7F831138BC425CB5395DC /* CityNetworkDataProviderAssemblyImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityNetworkDataProviderAssemblyImpl.swift; sourceTree = "<group>"; };
 		33F19289BE6ABFD392D210F7 /* WeatherService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
@@ -176,6 +169,8 @@
 		4A0300591E9053A8001B2014 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		4A03FFD21E8FD591001B2014 /* FlightPeopleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightPeopleTableViewCell.swift; sourceTree = "<group>"; };
 		4A03FFD31E8FD591001B2014 /* FlightPeopleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightPeopleTableViewCell.xib; sourceTree = "<group>"; };
+		4A0D082D1E93C4AD00AA6B16 /* RequestViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewInput.swift; sourceTree = "<group>"; };
+		4A0D08311E93D09300AA6B16 /* MessageViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewInput.swift; sourceTree = "<group>"; };
 		4A1400A51E92561700ECB2B0 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		4A1400A71E9256B600ECB2B0 /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
 		4A1400CF1E927C7100ECB2B0 /* NavigationBarTitleLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleLabel.swift; sourceTree = "<group>"; };
@@ -184,7 +179,6 @@
 		4A1400D71E928A2600ECB2B0 /* MinusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinusButton.swift; sourceTree = "<group>"; };
 		4A1400D81E928A2600ECB2B0 /* PlusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlusButton.swift; sourceTree = "<group>"; };
 		4A1400D91E928A2600ECB2B0 /* TransparentBorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransparentBorderedButton.swift; sourceTree = "<group>"; };
-		4A1400E91E92C27C00ECB2B0 /* NavigationBarTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationBarTitleView.swift; sourceTree = "<group>"; };
 		4A1400ED1E92CA1800ECB2B0 /* SegmentLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentLabel.swift; sourceTree = "<group>"; };
 		4A1400F11E92ED6000ECB2B0 /* WeatherAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAdapter.swift; sourceTree = "<group>"; };
 		4A1400F41E92EE0C00ECB2B0 /* WeatherTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherTableViewCell.swift; sourceTree = "<group>"; };
@@ -235,7 +229,6 @@
 		623A15F95C7EB965BD2879AB /* CityServiceImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityServiceImpl.swift; sourceTree = "<group>"; };
 		631B6767DD84D9DA4BE46872 /* FlightRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightRouterInput.swift; sourceTree = "<group>"; };
 		634F41761C624D4B5DD807B2 /* CityNetworkDataProviderAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityNetworkDataProviderAssembly.swift; sourceTree = "<group>"; };
-		63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractorInput.swift; sourceTree = "<group>"; };
 		66A69689420695B8C0F903FF /* WeatherMapperImpl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherMapperImpl.swift; sourceTree = "<group>"; };
 		6B5C53078852388D0DD82FA2 /* FlightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewOutput.swift; sourceTree = "<group>"; };
 		6B80BD286E4D2ECC32B90EAB /* CityRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityRouter.swift; sourceTree = "<group>"; };
@@ -253,13 +246,11 @@
 		96C822631AB9ED9C1C49DD56 /* WeatherMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherMapper.swift; sourceTree = "<group>"; };
 		9CE865C322E61651A79DA124 /* WeatherModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleInitializer.swift; sourceTree = "<group>"; };
 		A001834A2C002054B85437BC /* FlightModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightModuleInitializer.swift; sourceTree = "<group>"; };
-		A7BA6AA92180958A6958C178 /* WeatherRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherRouter.swift; sourceTree = "<group>"; };
 		BC397D5BF2767DE96C459355 /* WeatherViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherViewOutput.swift; sourceTree = "<group>"; };
 		C1156B66E04532F4E635096A /* WeatherDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherDataProvider.swift; sourceTree = "<group>"; };
 		C23B56740683A372C407CE6D /* WeatherViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		C67DB7CC5FD8C7DC79193347 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
 		C7F708EF064BBB8D901F61D4 /* FlightViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewOutput.swift; sourceTree = "<group>"; };
-		C91D317FC340C9CA8ACDA5B9 /* WeatherRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherRouterInput.swift; sourceTree = "<group>"; };
 		CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
 		D095647239DC3A07020E156E /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
 		D65FC952C5AB88536DC1E734 /* WeatherInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherInteractorOutput.swift; sourceTree = "<group>"; };
@@ -272,7 +263,6 @@
 		E71858DD9541D6DB614BC8C5 /* CityViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		EA4F6FB268A0F67DE467361E /* FlightPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightPresenter.swift; sourceTree = "<group>"; };
 		EAE29B91884347E532ECDF54 /* CityModuleInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityModuleInitializer.swift; sourceTree = "<group>"; };
-		F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightInteractor.swift; sourceTree = "<group>"; };
 		F24004C484D9EBA3603DD323 /* FlightViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FlightViewInput.swift; sourceTree = "<group>"; };
 		F40477795380149D134FB1D8 /* WeatherModuleConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WeatherModuleConfigurator.swift; sourceTree = "<group>"; };
 		F7CF231E86C927CFCC43503A /* CityViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CityViewInput.swift; sourceTree = "<group>"; };
@@ -490,14 +480,6 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
-		4A1400E81E92C26700ECB2B0 /* Subviews */ = {
-			isa = PBXGroup;
-			children = (
-				4A1400E91E92C27C00ECB2B0 /* NavigationBarTitleView.swift */,
-			);
-			path = Subviews;
-			sourceTree = "<group>";
-		};
 		4A1400F31E92EDFA00ECB2B0 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -619,6 +601,8 @@
 				4AE9160E1E8E93220094D9C5 /* ConfigurationHolder.swift */,
 				4AE916141E8E93810094D9C5 /* RouterTransitionHandler.swift */,
 				4AE916161E8E93A00094D9C5 /* RouterViewController.swift */,
+				4A0D082D1E93C4AD00AA6B16 /* RequestViewInput.swift */,
+				4A0D08311E93D09300AA6B16 /* MessageViewInput.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -733,7 +717,6 @@
 			children = (
 				FA61B04535F0A25B69B61D90 /* Assembly */,
 				CB97F48C2D6CDCCDA90B0B94 /* Interactor */,
-				DA38B2053930D2AA0099C1A1 /* Router */,
 				08DBE68F4956A8D5C4266871 /* Presenter */,
 				74A2A2A0A52E4DECDF75F977 /* View */,
 			);
@@ -795,7 +778,6 @@
 		74A2A2A0A52E4DECDF75F977 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4A1400E81E92C26700ECB2B0 /* Subviews */,
 				4A1400F31E92EDFA00ECB2B0 /* Cell */,
 				4A1400F11E92ED6000ECB2B0 /* WeatherAdapter.swift */,
 				C23B56740683A372C407CE6D /* WeatherViewController.swift */,
@@ -809,7 +791,6 @@
 			isa = PBXGroup;
 			children = (
 				CF5C899594AEC2D5DA6AF7B9 /* FlightPresenter.swift */,
-				2B674FF4E72AEE9D371E8A15 /* FlightModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -831,16 +812,6 @@
 				4A0300271E9027C9001B2014 /* CityModuleOutput.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A0C9660D8E802728FFDBD756 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				F1E0ED3886C7C99701B7E517 /* FlightInteractor.swift */,
-				63DA1213ECE14858B832D775 /* FlightInteractorInput.swift */,
-				08CC802AE883DDFF473A3B0B /* FlightInteractorOutput.swift */,
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		A8CC3BC8BA9B8D9514C79BCF /* Frameworks */ = {
@@ -936,20 +907,10 @@
 			path = Assembly;
 			sourceTree = "<group>";
 		};
-		DA38B2053930D2AA0099C1A1 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				A7BA6AA92180958A6958C178 /* WeatherRouter.swift */,
-				C91D317FC340C9CA8ACDA5B9 /* WeatherRouterInput.swift */,
-			);
-			path = Router;
-			sourceTree = "<group>";
-		};
 		DD3FB3359B6AB7BC6DF76EB0 /* Flight */ = {
 			isa = PBXGroup;
 			children = (
 				CB0DE011ED4C9FACEFE70319 /* Assembly */,
-				A0C9660D8E802728FFDBD756 /* Interactor */,
 				0098F81E3C48F686A667754A /* Router */,
 				7C84B74052B97D0C820E20EC /* Presenter */,
 				FF533BCD03AF2DFDD3FB9410 /* View */,
@@ -1148,6 +1109,7 @@
 				4AE9162C1E8E986C0094D9C5 /* NavigationBar.swift in Sources */,
 				4AE9162E1E8E98840094D9C5 /* TransparentNavigationBar.swift in Sources */,
 				4A0300531E905360001B2014 /* City.swift in Sources */,
+				4A0D082E1E93C4AD00AA6B16 /* RequestViewInput.swift in Sources */,
 				4AE9163D1E8E9DF00094D9C5 /* Color.swift in Sources */,
 				4AE9161A1E8E93D80094D9C5 /* ViewController.swift in Sources */,
 				4AE9164C1E8EE5A80094D9C5 /* TextField.swift in Sources */,
@@ -1163,19 +1125,14 @@
 				4A0300481E9052C4001B2014 /* Request.swift in Sources */,
 				4A1400DE1E928A2600ECB2B0 /* MinusButton.swift in Sources */,
 				4AE916471E8EE3F50094D9C5 /* Label.swift in Sources */,
-				FE95030519B8BA0E37585CDE /* FlightInteractor.swift in Sources */,
-				422A3A9C425D922C8538105B /* FlightInteractorInput.swift in Sources */,
-				B4141DCE9470B251451B388B /* FlightInteractorOutput.swift in Sources */,
 				4AE916401E8EE3030094D9C5 /* FlightDateTableViewCell.swift in Sources */,
 				7B0A6D8955EA68719344E6A0 /* FlightRouter.swift in Sources */,
 				4AE916291E8E97CE0094D9C5 /* String+localization.swift in Sources */,
 				4AE916321E8E9AEF0094D9C5 /* FlightCityTableViewCell.swift in Sources */,
 				2C1703E9C4C58C60D8C56312 /* FlightRouterInput.swift in Sources */,
 				EF52E6B1AB0E692FB7752218 /* FlightPresenter.swift in Sources */,
-				1805118F546AAA73DDA9A059 /* FlightModuleInput.swift in Sources */,
 				B9765C8B551AF17E3E6E847C /* FlightViewController.swift in Sources */,
 				E4F0AEE430B98E6CB94EE449 /* FlightViewInput.swift in Sources */,
-				4A1400EA1E92C27C00ECB2B0 /* NavigationBarTitleView.swift in Sources */,
 				4A03005A1E9053A8001B2014 /* Result.swift in Sources */,
 				4A1400F21E92ED6000ECB2B0 /* WeatherAdapter.swift in Sources */,
 				70AEEE99591EE11CA9DBAC05 /* FlightViewOutput.swift in Sources */,
@@ -1186,6 +1143,7 @@
 				9E0A3062858EABEEADAC73E0 /* CityInteractor.swift in Sources */,
 				4A03004C1E9052E5001B2014 /* TransportImpl.swift in Sources */,
 				4A03002C1E9030E7001B2014 /* CityTextField.swift in Sources */,
+				4A0D08321E93D09300AA6B16 /* MessageViewInput.swift in Sources */,
 				4A1400F91E92FF3100ECB2B0 /* SortedWeather.swift in Sources */,
 				7F280FA98B52E4F371CBB42B /* CityInteractorInput.swift in Sources */,
 				288F50E7243D1BCA5EF640D2 /* CityInteractorOutput.swift in Sources */,
@@ -1217,8 +1175,6 @@
 				8D5CC9CBEFC6090B15E97F69 /* WeatherInteractorOutput.swift in Sources */,
 				4A1400A61E92561700ECB2B0 /* Weather.swift in Sources */,
 				4A1401011E930D1800ECB2B0 /* BlackLittleLabel.swift in Sources */,
-				31F679CA43FFFEDB0C3F7EA2 /* WeatherRouter.swift in Sources */,
-				72EB6B0F42DB3F16B5D345DF /* WeatherRouterInput.swift in Sources */,
 				2E51E55C5BFB0D577FA00A40 /* WeatherPresenter.swift in Sources */,
 				5C20DDD557E9FFD6E5C17C7F /* WeatherModuleInput.swift in Sources */,
 				C28D9B70D72C7BA087E9922C /* WeatherViewController.swift in Sources */,

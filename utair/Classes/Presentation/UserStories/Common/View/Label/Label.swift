@@ -14,13 +14,9 @@ class Label: UILabel {
     // MARK: Properties
     
     var labelFont: UIFont { return UIFont.systemFont(ofSize: UIFont.systemFontSize) }
-    
     var labelColor: UIColor { return UIColor.white }
-    
     var labelLines: Int { return 0 }
-    
     var labelLineBreaks: NSLineBreakMode { return NSLineBreakMode.byWordWrapping }
-    
     var textAlpha: CGFloat { return 1 }
     
     // MARK: Initialization and deinitialization

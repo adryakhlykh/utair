@@ -24,6 +24,8 @@ class FlightDateTableViewCell: UITableViewCell {
     @IBAction func backButtonAction(_ sender: Any) { backTextField.becomeFirstResponder() }
     
     @IBAction func clearButtonAction(_ sender: Any) {
+        backTextField.text = nil
+        backDateBlock?(0)
         backButton.isHidden = false
         backTextField.isHidden = true
         backLabel.isHidden = true
@@ -45,9 +47,7 @@ class FlightDateTableViewCell: UITableViewCell {
     
     // MARK: Initialization and deinitialization
     
-    deinit {
-        NotificationCenter.default.removeObserver(self)
-    }
+    deinit { NotificationCenter.default.removeObserver(self) }
     
     // MARK: UIKit
 
@@ -55,7 +55,7 @@ class FlightDateTableViewCell: UITableViewCell {
         super.awakeFromNib()
         setupStyle()
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidHide(notification:)), name: .UIKeyboardDidHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
     }
     
     // MARK: Internal helpers
@@ -80,9 +80,7 @@ class FlightDateTableViewCell: UITableViewCell {
         endEditing(true)
     }
     
-    func tapOnCancelButton() {
-        endEditing(true)
-    }
+    func tapOnCancelButton() { endEditing(true) }
     
     func keyboardWillShow(notification: Notification) {
         if let userInfo = notification.userInfo {
@@ -94,9 +92,7 @@ class FlightDateTableViewCell: UITableViewCell {
         }
     }
     
-    func keyboardDidHide(notification: Notification) {
-        keyboardHideBlock?()
-    }
+    func keyboardWillHide(notification: Notification) { keyboardHideBlock?() }
     
     // MARK: Private helpers
     

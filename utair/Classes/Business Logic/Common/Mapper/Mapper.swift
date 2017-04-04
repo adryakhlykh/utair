@@ -9,5 +9,11 @@
 import Foundation
 
 protocol Mapper {
+    
+    /// Метод для парсинга данных
+    ///
+    /// - Parameter modelDictionary: словарь с данными
+    /// - Returns: объект типа Response
+    
     func mapResponse(_ modelDictionary: ModelDictionary) throws -> Response
 }

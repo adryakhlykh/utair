@@ -9,5 +9,12 @@
 import Foundation
 
 protocol Transport {
-    func request(_ request: URLRequest, completionBlock: @escaping (Result<Data>) -> ())
+    
+    /// Метод для сетевого запроса
+    ///
+    /// - Parameters:
+    ///   - request: сетевой запрос
+    ///   - completionBlock: блок с данными
+    
+    func request(_ request: URLRequest, completionBlock: @escaping DataResultBlock)
 }

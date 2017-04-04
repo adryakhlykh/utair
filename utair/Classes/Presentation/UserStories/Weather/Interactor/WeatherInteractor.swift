@@ -16,8 +16,8 @@ class WeatherInteractor: WeatherInteractorInput {
     // MARK: WeatherInteractorInput
     
     func getWeather(withLatitude latitude: Double, longitude: Double) {
-        weatherService?.getAll(latitude: latitude, longitude: longitude) {
-            [weak self] result in self?.didGetAllWeatherResult(result)
+        weatherService?.getAll(latitude: latitude, longitude: longitude) { [weak self] result in
+            self?.didGetAllWeatherResult(result)
         }
     }
     
@@ -34,7 +34,5 @@ class WeatherInteractor: WeatherInteractorInput {
         output.didGetWeather(withWeather: weather)
     }
     
-    private func didGetAllWeatherError(_ error: Error) {
-        print(error)
-    }
+    private func didGetAllWeatherError(_ error: Error) { output.didGetError(withError: error) }
 }

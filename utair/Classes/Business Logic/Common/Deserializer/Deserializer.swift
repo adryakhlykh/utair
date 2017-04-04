@@ -9,5 +9,11 @@
 import Foundation
 
 protocol Deserializer {
+    
+    /// Метод для десериализации данных
+    ///
+    /// - Parameter data: данные
+    /// - Returns: словарь десериализованных данных
+    
     func deserialize(_ data: Data) throws -> ModelDictionary
 }

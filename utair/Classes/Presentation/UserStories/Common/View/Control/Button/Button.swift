@@ -47,13 +47,14 @@ class Button: UIButton {
     // MARK: Private Helpers
     
     private func applyStyle() {
+        let borderWidth = CGFloat(1.0)
         backgroundColor = buttonBackgroundColor
         setTitleColor(textColor, for: .normal)
         layer.masksToBounds = masksToBounds
         layer.cornerRadius = cornerRadius
         if let color = borderColor {
             layer.borderColor = color.cgColor
-            layer.borderWidth = 1.0
+            layer.borderWidth = borderWidth
         }
         setImage(image, for: .normal)
         imageView?.tintColor = imageTintColor

@@ -12,7 +12,7 @@ import UIKit
 class TransparentNavigationBar: NavigationBar {
     override var navigationBarBackgroundColor: UIColor { return .clear }
     override var navigationBarTintColor: UIColor { return .clear }
-    override var navigationBarElementTintColor: UIColor { return Color.blue }
+    override var navigationBarElementTintColor: UIColor { return .white }
     override var titleImage: UIImage? { return UIImage(named: "logo") }
     override var titleColor: UIColor { return Color.blue }
 }

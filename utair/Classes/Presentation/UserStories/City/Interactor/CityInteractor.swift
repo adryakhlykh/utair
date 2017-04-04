@@ -41,7 +41,5 @@ class CityInteractor: CityInteractorInput {
         output.didGetCities(withCities: cities)
     }
     
-    private func didGetAllCitiesError(_ error: Error) {
-        print(error)
-    }
+    private func didGetAllCitiesError(_ error: Error) { output.didGetError(withError: error) }
 }

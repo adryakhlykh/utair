@@ -9,6 +9,9 @@
 import Foundation
 
 class JSONDeserializer: Deserializer {
+    
+    // MARK: Deserializer
+    
     func deserialize(_ data: Data) throws -> ModelDictionary {
         let json = try JSONSerialization.jsonObject(with: data, options: [])
         guard let modelDictionary = json as? ModelDictionary else {

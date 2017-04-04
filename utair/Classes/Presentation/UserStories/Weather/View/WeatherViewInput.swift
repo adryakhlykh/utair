@@ -6,7 +6,7 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol WeatherViewInput: class {
+protocol WeatherViewInput: class, RequestViewInput, MessageViewInput {
     
     /// Метод для отображения заголовка
     ///
@@ -16,13 +16,19 @@ protocol WeatherViewInput: class {
     ///   - imageName: имя картинки логотипа
     
     func showTitle(withFromCityTitle fromCityTitle: String, toCityTitle: String, imageName: String)
-
+    
+    /// Метод для настройки вью
+    ///
+    /// - Parameter weather: погода
+    
+    func setupView(withWeather weather: [SortedWeather])
+    
     /// Метод для настройки вью
     ///
     /// - Parameters:
-    ///   - weather: словарь объектов Weather отсортированный по дням
     ///   - thereTitle: заголовок "туда"
     ///   - backTitle: заголовок "обратно"
+    ///   - imageName: название картинки
     
-    func setupView(withWeather weather: [SortedWeather], thereTitle: String, backTitle: String)
+    func setupView(withThereTitle thereTitle: String, backTitle: String, imageName: String)
 }

@@ -18,6 +18,9 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
     @IBOutlet weak var backLabel: UILabel!
     @IBOutlet weak var thereView: UIView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var leftNavigationBarLabel: NavigationBarTitleLabel!
+    @IBOutlet weak var navigationBarImageView: UIImageView!
+    @IBOutlet weak var rightNavigationBarLabel: NavigationBarTitleLabel!
     
     // MARK: IBActions
     
@@ -40,7 +43,6 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
 	// MARK: Properties
 	
     var output: WeatherViewOutput!
-    var titleView: NavigationBarTitleView?
     private var adapter: WeatherAdapter?
 
     // MARK: UIViewController
@@ -53,42 +55,25 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.navigationBar.tintColor = Color.blue
         navigationController?.navigationBar.barStyle = .default
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        navigationItem.titleView?.isHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        navigationController?.navigationBar.tintColor = .white
         navigationController?.navigationBar.barStyle = .black
     }
     
     // MARK: WeatherViewInput
 
     func showTitle(withFromCityTitle fromCityTitle: String, toCityTitle: String, imageName: String) {
-        titleView?.navigationTitleImageView.image = UIImage(named: imageName)
-        titleView?.leftNavigationTitleLabel.text = fromCityTitle
-        titleView?.rightNavigationTitleLabel.text = toCityTitle
-        navigationItem.titleView = titleView
-        navigationItem.titleView?.isHidden = true
-        if let navigationView = navigationItem.titleView, let titleView = titleView {
-            NSLayoutConstraint.activate([
-                titleView.topAnchor.constraint(equalTo: navigationView.topAnchor),
-                titleView.bottomAnchor.constraint(equalTo: navigationView.bottomAnchor),
-                titleView.heightAnchor.constraint(equalTo: navigationView.heightAnchor),
-                titleView.leadingAnchor.constraint(equalTo: navigationView.leadingAnchor),
-                titleView.trailingAnchor.constraint(equalTo: navigationView.trailingAnchor),
-                titleView.widthAnchor.constraint(equalTo: navigationView.widthAnchor)
-            ])
-        }
+        navigationBarImageView.image = UIImage(named: imageName)
+        leftNavigationBarLabel.text = fromCityTitle
+        rightNavigationBarLabel.text = toCityTitle
     }
     
-    func setupView(withWeather weather: [SortedWeather], thereTitle: String, backTitle: String) {
-        thereLabel.text = thereTitle
-        backLabel.text = backTitle
+    func setupView(withWeather weather: [SortedWeather]) {
         let adapter = WeatherAdapter(tableView: tableView, weather: weather)
         tableView.dataSource = adapter
         tableView.delegate = adapter
@@ -96,15 +81,16 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         tableView.reloadData()
     }
     
-    // MARK: Private helpers
-    
-    private func initStyle() {
-        initSeparator()
-        setupInitialStyle()
+    func setupView(withThereTitle thereTitle: String, backTitle: String, imageName: String) {
+        thereLabel.text = thereTitle
+        backLabel.text = backTitle
+        setupInitialStyle(withImageName: imageName)
     }
     
-    private func setupInitialStyle() {
-        let thereImage = UIImage(named: "icPlaneDirection")
+    // MARK: Private helpers
+    
+    private func setupInitialStyle(withImageName imageName: String) {
+        let thereImage = UIImage(named: imageName)
         if let backImage = thereImage?.cgImage {
             let image = UIImage(cgImage: backImage, scale: 1.0, orientation: .upMirrored)
             backImageView.image  = image.withRenderingMode(.alwaysTemplate)
@@ -115,7 +101,8 @@ class WeatherViewController: RouterViewController, WeatherViewInput {
         backLabel.textColor = Color.gray
     }
     
-    private func initSeparator() {
+    private func initStyle() {
+        spinner?.color = Color.blue
         let height = CGFloat(1)
         let separator = UIView(frame: .zero)
         separator.translatesAutoresizingMaskIntoConstraints = false

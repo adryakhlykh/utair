@@ -28,14 +28,14 @@ class FlightPeopleTableViewCell: UITableViewCell {
     @IBOutlet weak var babyTitleLabel: UILabel!
     @IBOutlet weak var babyMinusButton: MinusButton!
     
-    
-    
     // MARK: IBActions
     
     @IBAction func adultPlusButtonAction(_ sender: Any) {
-        if adultCount != 9 && (childCount + adultCount + babyCount) != 9 {
+        if adultCount != maxPassengersCount && (childCount + adultCount + babyCount) != maxPassengersCount {
             adultCount += 1
             adultCountLabel.text = adultCount.description
+        } else {
+            errorBlock?(.passangersGreaterThan9)
         }
     }
     
@@ -47,12 +47,14 @@ class FlightPeopleTableViewCell: UITableViewCell {
     }
     
     @IBAction func childPlusButtonAction(_ sender: Any) {
-        if childCount != 8 && (childCount + adultCount + babyCount) != 9 {
+        if childCount != 8 && (childCount + adultCount + babyCount) != maxPassengersCount {
             childCount += 1
             childCountLabel.text = childCount.description
             childTitleLabel.textColor = .white
             childImageView.tintColor = .white
             childCountLabel.textColor = .white
+        } else {
+            errorBlock?(.passangersGreaterThan9)
         }
     }
     
@@ -69,12 +71,20 @@ class FlightPeopleTableViewCell: UITableViewCell {
     }
     
     @IBAction func babyPlusButtonAction(_ sender: Any) {
-        if babyCount != adultCount && (childCount + adultCount + babyCount) != 9 {
+        if babyCount != adultCount && (childCount + adultCount + babyCount) != maxPassengersCount {
             babyCount += 1
             babyCountLabel.text = babyCount.description
             babyTitleLabel.textColor = .white
             babyImageView.tintColor = .white
             babyCountLabel.textColor = .white
+        } else {
+            if babyCount == adultCount {
+                errorBlock?(.babyGreaterThanAdult)
+            } else if (childCount + adultCount + babyCount) != maxPassengersCount {
+                errorBlock?(.passangersGreaterThan9)
+            } else {
+                errorBlock?(.passangersGreaterThan9)
+            }
         }
     }
     
@@ -90,11 +100,16 @@ class FlightPeopleTableViewCell: UITableViewCell {
         }
     }
     
+    // MARK: Constants
+    
+    private let maxPassengersCount = 9
+    
     // MARK: Properties
     
     private var adultCount = 1
     private var childCount = 0
     private var babyCount = 0
+    var errorBlock: ErrorBlock?
     
     // MARK: UIKit
     

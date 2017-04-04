@@ -9,6 +9,9 @@
 import Foundation
 
 class CityMapperImpl: CityMapper {
+    
+    // MARK: CityMapper
+    
     func map(modelDictionary: ModelDictionary) throws -> City {
         let id = try modelDictionary.map(JSONKey.City.id) as Int
         let title = try modelDictionary.map(JSONKey.City.title) as String
@@ -20,6 +23,8 @@ class CityMapperImpl: CityMapper {
     func mapAll(modelDictionaries: [ModelDictionary]) throws -> [City] {
         return try modelDictionaries.map { try map(modelDictionary: $0) }
     }
+    
+    // MARK: Mapper
     
     func mapResponse(_ modelDictionary: ModelDictionary) throws -> Response {
         let data = try modelDictionary.map(JSONKey.results) as [ModelDictionary]

@@ -11,9 +11,13 @@ import Foundation
 protocol DataProvider { }
 
 extension DataProvider {
+    
+    // MARK: Internal helpers
+    
     func performInBackground(_ block: @escaping () -> ()) {
         OperationQueue().addOperation { block() }
     }
+    
     func performOnMainThread(_ block: @escaping () -> ()) {
         OperationQueue.main.addOperation { block() }
     }

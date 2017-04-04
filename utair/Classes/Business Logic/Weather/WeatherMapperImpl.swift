@@ -9,6 +9,9 @@
 import Foundation
 
 class WeatherMapperImpl: WeatherMapper {
+    
+    // MARK: WeatherMapper
+    
     func map(modelDictionary: ModelDictionary) throws -> Weather {
         let dateAndTime = try modelDictionary.map(JSONKey.Weather.dateAndTime) as Int
         let main = try modelDictionary.map(JSONKey.Weather.main) as ModelDictionary
@@ -19,6 +22,8 @@ class WeatherMapperImpl: WeatherMapper {
     func mapAll(modelDictionaries: [ModelDictionary]) throws -> [Weather] {
         return try modelDictionaries.map { try map(modelDictionary: $0) }
     }
+    
+    // MARK: Mapper
     
     func mapResponse(_ modelDictionary: ModelDictionary) throws -> Response {
         let data = try modelDictionary.map(JSONKey.list) as [ModelDictionary]

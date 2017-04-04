@@ -74,8 +74,9 @@ class TextField: UITextField {
     }
     
     private func initSeparator() {
+        let separatorTopPadding = CGFloat(0)
         let separator = UIView(frame: CGRect(
-            x: 0,
+            x: separatorTopPadding,
             y: frame.height - separatorHeight,
             width: frame.width,
             height: separatorHeight

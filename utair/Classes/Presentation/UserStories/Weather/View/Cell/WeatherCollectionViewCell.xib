@@ -18,13 +18,13 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqI-AI-UCK" customClass="BlackLittleLabel" customModule="utair" customModuleProvider="target">
-                        <rect key="frame" x="8" y="9" width="46" height="21"/>
+                        <rect key="frame" x="0.0" y="9" width="62" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vIu-ba-iCB" customClass="BlackLittleLabel" customModule="utair" customModuleProvider="target">
-                        <rect key="frame" x="8" y="35" width="46" height="19"/>
+                        <rect key="frame" x="0.0" y="30" width="62" height="24"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,12 +32,12 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="kqI-AI-UCK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="4U7-WD-EdC"/>
-                <constraint firstAttribute="trailing" secondItem="vIu-ba-iCB" secondAttribute="trailing" constant="8" id="8GT-0N-T7a"/>
-                <constraint firstItem="vIu-ba-iCB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Gch-Kg-zoz"/>
+                <constraint firstItem="kqI-AI-UCK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="4U7-WD-EdC"/>
+                <constraint firstAttribute="trailing" secondItem="vIu-ba-iCB" secondAttribute="trailing" id="8GT-0N-T7a"/>
+                <constraint firstItem="vIu-ba-iCB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gch-Kg-zoz"/>
                 <constraint firstAttribute="bottom" secondItem="vIu-ba-iCB" secondAttribute="bottom" constant="8" id="Kl9-XC-hun"/>
                 <constraint firstItem="vIu-ba-iCB" firstAttribute="top" secondItem="kqI-AI-UCK" secondAttribute="bottom" constant="5" id="Kzd-D9-3Ve"/>
-                <constraint firstAttribute="trailing" secondItem="kqI-AI-UCK" secondAttribute="trailing" constant="8" id="oWL-yO-NBU"/>
+                <constraint firstAttribute="trailing" secondItem="kqI-AI-UCK" secondAttribute="trailing" id="oWL-yO-NBU"/>
                 <constraint firstItem="kqI-AI-UCK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="9" id="zX1-e2-6IH"/>
             </constraints>
             <connections>

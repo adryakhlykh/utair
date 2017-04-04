@@ -6,21 +6,17 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-class FlightPresenter: FlightModuleInput, FlightViewOutput, FlightInteractorOutput, CityModuleOutput {
+class FlightPresenter: FlightViewOutput, CityModuleOutput {
 
     // MARK: Properties
     
     weak var view: FlightViewInput!
-    var interactor: FlightInteractorInput!
     var router: FlightRouterInput!
     weak var cityModule: CityModuleInput!
-    private var id = 0
 
     // MARK: FlightViewOutput
 
-    func setupView() {
-        view.setupView()
-    }
+    func setupView() { view.setupView(withFindButtonTitle: "FLIGT.BUTTON.FIND".localized) }
     
     func didTapOnFromView(withTitle title: String) {
         router.configureCityModule(withModuleOutput: self)
@@ -33,23 +29,22 @@ class FlightPresenter: FlightModuleInput, FlightViewOutput, FlightInteractorOutp
     }
     
     func didTapOnFindButton(withFlight flight: Flight) { router.openModule(withFlight: flight) }
-
-    // MARK: FlightModuleInput
     
-    func configureModule(withID id: Int) { self.id = id }
-
-    // MARK: FlightInteractorOutput 
+    func didGetError(withErrorType type: ErrorType) {
+        switch type {
+            case .emptyFromCity: view.showMessageView(withMessage: "ERROR.CITY.FROM".localized)
+            case .emptyToCity: view.showMessageView(withMessage: "ERROR.CITY.TO".localized)
+            case .emptyBackDate: view.showMessageView(withMessage: "ERROR.DATE.BACK".localized)
+            case .passangersGreaterThan9: view.showMessageView(withMessage: "ERROR.PASSANGERS".localized)
+            case .babyGreaterThanAdult: view.showMessageView(withMessage: "ERROR.BABY".localized)
+        }
+    }
     
     // MARK: CityModuleOutput
     
     func didLoadCityModuleInput(withCityModule module: CityModuleInput) { cityModule = module }
     
-    func didTapOnFromCity(withCity city: City) {
-        view.setupView(withFromCity: city)
-    }
+    func didTapOnFromCity(withCity city: City) { view.setupView(withFromCity: city) }
     
-    func didTapOnToCity(withCity city: City) {
-        view.setupView(withToCity: city)
-        
-    }
+    func didTapOnToCity(withCity city: City) { view.setupView(withToCity: city) }
 }
