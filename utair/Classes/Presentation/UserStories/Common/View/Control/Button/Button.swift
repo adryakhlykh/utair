@@ -21,7 +21,7 @@ class Button: UIButton {
     var image: UIImage? { return nil }
     var imageInsets: UIEdgeInsets { return UIEdgeInsets.zero }
     var imageTintColor: UIColor? { return nil }
-    var imageContentMode: UIViewContentMode { return .scaleToFill }
+    var imageContentMode: UIView.ContentMode { return .scaleToFill }
     var buttonAlpha: CGFloat { return 1 }
     
     // MARK: Initialization and deinitialization

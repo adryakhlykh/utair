@@ -6,7 +6,7 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol CityModuleInput: class, ModuleInput {
+protocol CityModuleInput: ModuleInput {
 
     /// Метод для конфигурации модуля
     ///
