@@ -13,7 +13,7 @@ class TableView: UITableView {
         super.init(coder: aDecoder)
         let estimateRowHeight = CGFloat(200)
         separatorStyle = .none
-        rowHeight = UITableViewAutomaticDimension
+        rowHeight = UITableView.automaticDimension
         estimatedRowHeight = estimateRowHeight
     }
 }

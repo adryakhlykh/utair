@@ -64,7 +64,7 @@ class ViewController: UIViewController, RequestViewInput, MessageViewInput {
     // MARK: Private helpers
     
     private func initSpinner() {
-        spinner = UIActivityIndicatorView(activityIndicatorStyle: .whiteLarge)
+        spinner = UIActivityIndicatorView(style: .whiteLarge)
         spinner?.color = UIColor.white
         spinner?.hidesWhenStopped = true
         spinner?.translatesAutoresizingMaskIntoConstraints = false

@@ -6,7 +6,7 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol CityModuleOutput: class, ModuleOutput {
+protocol CityModuleOutput: ModuleOutput {
     
     /// Метод сообщает презентеру что модуль загрузился
     ///

@@ -54,13 +54,13 @@ class FlightDateTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         setupStyle()
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: .UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: .UIKeyboardWillHide, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     // MARK: Internal helpers
     
-    func tapOnDoneButton() {
+    @objc func tapOnDoneButton() {
         if thereTextField.isEditing {
             thereTextField.text = dateFormatter.string(from: datePickerView.date)
             thereDateBlock?(Int(datePickerView.date.timeIntervalSince1970))
@@ -80,11 +80,11 @@ class FlightDateTableViewCell: UITableViewCell {
         endEditing(true)
     }
     
-    func tapOnCancelButton() { endEditing(true) }
+    @objc func tapOnCancelButton() { endEditing(true) }
     
-    func keyboardWillShow(notification: Notification) {
+    @objc func keyboardWillShow(notification: Notification) {
         if let userInfo = notification.userInfo {
-            if let keyboardFrame = userInfo[UIKeyboardFrameEndUserInfoKey] as? NSValue {
+            if let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue {
                 let keyboardRectangle = keyboardFrame.cgRectValue
                 let keyboardHeight = keyboardRectangle.height
                 keyboardShowBlock?(keyboardHeight)
@@ -92,7 +92,7 @@ class FlightDateTableViewCell: UITableViewCell {
         }
     }
     
-    func keyboardWillHide(notification: Notification) { keyboardHideBlock?() }
+    @objc func keyboardWillHide(notification: Notification) { keyboardHideBlock?() }
     
     // MARK: Private helpers
     
@@ -127,10 +127,10 @@ class FlightDateTableViewCell: UITableViewCell {
         toolbar.frame = CGRect(x: 0, y: 0, width: frame.width, height: toolbarHeight)
         let doneButton = UIBarButtonItem(title: "FLIGT.TOOLBAR.BUTTON.DONE".localized, style: .plain, target: self, action: #selector(tapOnDoneButton))
         doneButton.tintColor = UIColor.black
-        doneButton.setTitleTextAttributes([NSFontAttributeName: Font.regular13], for: .normal)
+        doneButton.setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.font): Font.regular13]), for: .normal)
         let cancelButton = UIBarButtonItem(title: "FLIGT.TOOLBAR.BUTTON.CANCEL".localized, style: .plain, target: self, action: #selector(tapOnCancelButton))
         cancelButton.tintColor = UIColor.gray
-        cancelButton.setTitleTextAttributes([NSFontAttributeName: Font.regular13], for: .normal)
+        cancelButton.setTitleTextAttributes(convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.font): Font.regular13]), for: .normal)
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
         toolbar.setItems([cancelButton, space, doneButton], animated: true)
         toolbar.backgroundColor = .white
@@ -157,4 +157,15 @@ class FlightDateTableViewCell: UITableViewCell {
             bottomSeparator.trailingAnchor.constraint(equalTo: trailingAnchor),
         ])
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
 }

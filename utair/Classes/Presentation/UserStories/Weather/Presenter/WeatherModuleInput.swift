@@ -6,7 +6,7 @@
 //  Copyright © 2017 teedee. All rights reserved.
 //
 
-protocol WeatherModuleInput: class, ModuleInput {
+protocol WeatherModuleInput: ModuleInput {
 
     /// Метод для конфигурации модуля
     ///

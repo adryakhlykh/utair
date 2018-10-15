@@ -9,8 +9,8 @@
 import UIKit
 
 protocol RouterTransitionHandler: class {
-    weak var moduleInput: ModuleInput? { get set }
-    weak var moduleOutput: ModuleOutput? { get set }
+    var moduleInput: ModuleInput? { get set }
+    var moduleOutput: ModuleOutput? { get set }
     
     /// Метод для перехода в другой модуль с помощью сегвея
     ///

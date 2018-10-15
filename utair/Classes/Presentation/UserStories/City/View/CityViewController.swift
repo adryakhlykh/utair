@@ -28,7 +28,7 @@ class CityViewController: RouterViewController, CityViewInput {
         super.viewDidLoad()
         output.setupView()
         view.backgroundColor = Color.blue
-        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: .UITextFieldTextDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(textDidChange), name: UITextField.textDidChangeNotification, object: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -39,7 +39,7 @@ class CityViewController: RouterViewController, CityViewInput {
     
     // MARK: Internal helpers
     
-    func textDidChange() {
+    @objc func textDidChange() {
         if let text = cityTextField.text {
             output.didTextFieldTextChange(withSearchString: text)
         }

@@ -44,15 +44,15 @@ class TextField: UITextField {
     override func prepareForInterfaceBuilder() { applyStyle() }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
+        return bounds.inset(by: padding)
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
+        return bounds.inset(by: padding)
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return UIEdgeInsetsInsetRect(bounds, padding)
+        return bounds.inset(by: padding)
     }
     
     // MARK: Private Helpers
@@ -64,7 +64,7 @@ class TextField: UITextField {
         borderStyle = .none
         font = textFont
         if let placeholder = placeholder {
-            attributedPlaceholder = NSAttributedString(string: placeholder, attributes: [NSForegroundColorAttributeName: placeholderColor, NSFontAttributeName: placeholderFont])
+            attributedPlaceholder = NSAttributedString(string: placeholder, attributes: convertToOptionalNSAttributedStringKeyDictionary([convertFromNSAttributedStringKey(NSAttributedString.Key.foregroundColor): placeholderColor, convertFromNSAttributedStringKey(NSAttributedString.Key.font): placeholderFont]))
         }
         tintColor = elementsColor
         textAlignment = alignment
@@ -84,4 +84,15 @@ class TextField: UITextField {
         separator.backgroundColor = elementsColor
         addSubview(separator)
     }
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertToOptionalNSAttributedStringKeyDictionary(_ input: [String: Any]?) -> [NSAttributedString.Key: Any]? {
+	guard let input = input else { return nil }
+	return Dictionary(uniqueKeysWithValues: input.map { key, value in (NSAttributedString.Key(rawValue: key), value)})
+}
+
+// Helper function inserted by Swift 4.2 migrator.
+fileprivate func convertFromNSAttributedStringKey(_ input: NSAttributedString.Key) -> String {
+	return input.rawValue
 }

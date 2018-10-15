@@ -48,11 +48,11 @@ class FlightCityTableViewCell: UITableViewCell {
     
     // MARK: Internal helpers
     
-    func tapOnFromView() {
+    @objc func tapOnFromView() {
         if let text = fromTitleLabel.text { fromBlock?(text) }
     }
     
-    func tapOnToView() {
+    @objc func tapOnToView() {
         if let text = toTitleLabel.text { toBlock?(text) }
     }
     
